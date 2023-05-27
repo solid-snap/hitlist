@@ -23,7 +23,7 @@
 
         // afdrukken object ---------------------------
 
-        echo $mov1->afdrukken();
+        $mov1->afdrukken();
         ?>
     </body>
 </html>

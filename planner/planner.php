@@ -1,5 +1,5 @@
 <?php
-require_once "connect.php";
+require_once "../DBHitlist.php";
 class planner
 {
     // properties -- eigenschappen ----

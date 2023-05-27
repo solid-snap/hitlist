@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "connect.php";
+require_once "../DBHitlist.php";
 
 class
 shows
@@ -63,6 +63,40 @@ shows
     {
         $this->showSummary = $showSummary;
     }
+    // getters
+    function get_showName()
+    {
+        return $this->showName;
+    }
+
+    function get_showType()
+    {
+        return $this->showType;
+    }
+
+    function get_showGenre()
+    {
+        return $this->showGenre;
+    }
+    function get_showSeasons()
+    {
+        return $this->showSeasons;
+    }
+
+    function get_showEpLength()
+    {
+        return $this->showEpLength;
+    }
+
+    function get_showReview()
+    {
+        return $this->showReview;
+    }
+
+    function get_showSummary()
+    {
+        return $this->showSummary;
+    }
 
 
     public function afdrukken()
@@ -100,7 +134,7 @@ shows
 
         // statement maken voor tabel
         $sql = $conn->Prepare("insert into shows
-values (:showName, :showType, :showGenre, :showSeasons, :showEpLength :showReview :showSummary) ");
+values (:showId,:showName, :showType, :showGenre, :showSeasons, :showEpLength :showReview :showSummary) ");
 // variabelen in de statement zetten
         $sql->bindParam(":showId", $showId);
         $sql->bindParam(":showName", $showName);
@@ -167,7 +201,7 @@ values (:showName, :showType, :showGenre, :showSeasons, :showEpLength :showRevie
 
     public function deleteshows($showId)
     {
-        require "connect.php";
+        global $conn;
         //statements maken
         $sql = $conn->prepare(" DELETE FROM shows
         where showId = :showId");

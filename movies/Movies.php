@@ -1,6 +1,6 @@
 <?php
 
-require_once "hitlist/DBHitlist.php";
+require_once "../DBHitlist.php";
 
 class Movies
 {
@@ -118,7 +118,7 @@ class Movies
 
         // statement maken voor tabel
         $sql = $conn->Prepare("INSERT into movies
-values (:movName, :movType, :movGenre, :movLength, :movReview, :movSummary)");
+values (:movId,:movName, :movType, :movGenre, :movLength, :movReview, :movSummary)");
 // variabelen in de statement zetten
         $sql->bindParam(":movId", $movId);
         $sql->bindParam(":movName", $movName);

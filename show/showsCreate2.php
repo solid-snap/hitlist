@@ -24,7 +24,7 @@ $show1->createShows();
 
 // afdrukken object ---------------------------
 
-echo $show1->afdrukken();
+$show1->afdrukken();
 ?>
 </body>
 </html>

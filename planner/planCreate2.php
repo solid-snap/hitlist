@@ -22,7 +22,7 @@
 
     // afdrukken object ---------------------------
 
-    echo $planner1->afdrukken();
+    $planner1->afdrukken();
     ?>
 </div>
 </body>

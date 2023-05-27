@@ -1,6 +1,5 @@
 <?php
-
-require_once "Database/DBHitlist.php";
+require_once "../DBHitlist.php";
 
 class User
 {
@@ -58,7 +57,7 @@ class User
 
         // statement maken voor tabel
         $sql = $conn->Prepare("insert into users
-values (:userName, :userPassword)");
+values (:userId,:userName, :userPassword)");
 // variabelen in de statement zetten
         $sql->bindParam(":userId", $userId);
         $sql->bindParam(":userName", $userName);

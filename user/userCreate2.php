@@ -12,14 +12,14 @@
         // uitlezen vakjes van KlantenCreate1 -----
         $userName=$_POST["userNameVak"];
         $userPassword=$_POST["userPasswordVak"];
-
+        echo "test";
         // maken object -------------------------------
         $user1 = new User($userName, $userPassword);
         $user1->createUser();
 
         // afdrukken object ---------------------------
 
-        echo $user1->afdrukken();
+        $user1->afdrukken();
         ?>
     </body>
 </html>
