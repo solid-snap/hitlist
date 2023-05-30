@@ -176,7 +176,7 @@ values (:showId,:showName, :showType, :showGenre, :showSeasons, :showEpLength :s
 
     public function searchshows($showId)
     {
-        require "connect.php";
+        require "DBHitlist.php";
         global $conn;
         // sql statement
         $sql = $conn->prepare("select * from shows

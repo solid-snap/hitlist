@@ -9,7 +9,7 @@
 
 <?php
 require "shows.php";
-require "connect.php";
+require "DBHitlist.php";
 $showId = $_POST["showIdVak"];
 $show1 = new shows();
 $show1->searchshows($showId);
