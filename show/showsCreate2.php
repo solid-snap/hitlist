@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
 <!--  -->
-<head>
-    <title>shows Create 2</title>
-</head>
+    <head>
+        <title>shows Create 2</title>
+    </head>
     <body>
-    <h1>shows Create 2</h1>
+        <h1>shows Create 2</h1>
 
         <?php
         require "shows.php";
@@ -23,7 +23,7 @@
 
         // afdrukken object ---------------------------
 
-        $show1->afdrukken();
+        $show1->afdrukken(); //hallo
         ?>
     </body>
 </html>
