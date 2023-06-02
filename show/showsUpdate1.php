@@ -11,7 +11,7 @@
     <h1>update shows formulier 1</h1>
     <form action="showsUpdate2.php" method="post">
         <label for="showId">showId:</label>
-        <input type="text" id="showsId" name="showsIdVak">
+        <input type="text" id="showId" name="showIdVak">
         <input type="submit">
     </form>
 </div>

@@ -8,13 +8,13 @@
 <?php
 
 ?>
-<div id="centercontent">
+
     <h1>update shows formulier 2</h1>
 
     <?php
 
     require "shows.php";                    // nodig om object te maken
-    $showId = $_POST["showId"];
+    $showId = $_POST["showIdVak"];
     $showId1 = new shows();                // object aanmaken
     $showId1->searchshows($showId);
     // properties in variabelen zetten
@@ -39,6 +39,5 @@
         <input type="text" name="showSummary" value="<?php echo $showSummary; ?> "><br/><br/>
         <input type="submit"><br/><br/>
     </form>
-</div>
 </body>
 </html>

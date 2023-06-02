@@ -12,7 +12,6 @@
         // uitlezen vakjes van KlantenCreate1 -----
         $userName=$_POST["userNameVak"];
         $userPassword=$_POST["userPasswordVak"];
-        echo "test";
         // maken object -------------------------------
         $user1 = new User($userName, $userPassword);
         $user1->createUser();

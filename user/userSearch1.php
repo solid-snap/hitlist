@@ -4,7 +4,7 @@
     <body>
         <form action="userSearch2.php" method="post">
             <label for="userId">userId:</label>
-            <input type="text" id="userId" name="userIdvak">
+            <input type="text" id="userId" name="userIdVak">
             <input type="submit">
             <br>
         </form>
