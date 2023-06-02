@@ -148,7 +148,38 @@ values (:showId,:showName, :showType, :showGenre, :showSeasons, :showEpLength :s
         //melding
         echo "De student is toegevoegd: </br>";
     }
+    public
+    function updateShows($showId)
+    {
+        global $conn;
+        // gegevens uit het object in variabelen zetten
+        $showId;
+        $showName = $this->get_showName();
+        $showType = $this->get_showType();
+        $showGenre = $this->get_showGenre();
+        $showSeasons = $this->get_showSeasons();
+        $showEpLength = $this->get_showEpLength();
+        $showReview = $this->get_showReview();
+        $showSummary = $this->get_showSummary();
+        // statement maken
+        $sql = $conn->prepare("
+									update shows
+									set showId=:showId, showName=:showName, showType=:showType, 
+									    showGenre=:showGenre, showSeasons=:showSeasons, showEpLength=:showEpLength, showReview=:showReview, showSummary=:showSummary    
+									where showId=:showId
+								 ");
+        // variabelen in de statement zetten
 
+        $sql->bindParam(":showId", $showId);
+        $sql->bindParam(":showName", $showName);
+        $sql->bindParam(":showType", $showType);
+        $sql->bindParam(":showGenre", $showGenre);
+        $sql->bindParam(":showSeasons", $showSeasons);
+        $sql->bindParam(":showEplength", $showEpLength);
+        $sql->bindParam(":showReview", $showReview);
+        $sql->bindParam(":showSummary", $showSummary);
+        $sql->execute();
+    }
     public function readshows ()
     {
         global $conn;
@@ -176,7 +207,7 @@ values (:showId,:showName, :showType, :showGenre, :showSeasons, :showEpLength :s
 
     public function searchshows($showId)
     {
-        require "DBHitlist.php";
+
         global $conn;
         // sql statement
         $sql = $conn->prepare("select * from shows
