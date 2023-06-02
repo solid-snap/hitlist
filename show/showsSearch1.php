@@ -11,7 +11,6 @@
     <input type="text" id="showId" name="showIdVak">
     <input type="submit">
     <br>
-    <a href="schoolmenu.php">terug naar het menu.</a>
 </form>
 </body>
 </html>
