@@ -118,7 +118,7 @@ shows
     }
 
     // crud methoden
-    public function createShows()
+    public function createshows()
     {
         global $conn;
         // gegevens uit object in variabelen zetten
@@ -134,7 +134,7 @@ shows
 
         // statement maken voor tabel
         $sql = $conn->Prepare("insert into shows
-values (:showId,:showName, :showType, :showGenre, :showSeasons, :showEpLength :showReview :showSummary) ");
+values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, :showReview, :showSummary) ");
 // variabelen in de statement zetten
         $sql->bindParam(":showId", $showId);
         $sql->bindParam(":showName", $showName);
@@ -149,7 +149,7 @@ values (:showId,:showName, :showType, :showGenre, :showSeasons, :showEpLength :s
         echo "De student is toegevoegd: </br>";
     }
     public
-    function updateShows($showId)
+    function updateshows($showId)
     {
         global $conn;
         // gegevens uit het object in variabelen zetten
@@ -175,7 +175,7 @@ values (:showId,:showName, :showType, :showGenre, :showSeasons, :showEpLength :s
         $sql->bindParam(":showType", $showType);
         $sql->bindParam(":showGenre", $showGenre);
         $sql->bindParam(":showSeasons", $showSeasons);
-        $sql->bindParam(":showEplength", $showEpLength);
+        $sql->bindParam(":showEpLength", $showEpLength);
         $sql->bindParam(":showReview", $showReview);
         $sql->bindParam(":showSummary", $showSummary);
         $sql->execute();

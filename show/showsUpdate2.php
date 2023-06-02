@@ -14,7 +14,7 @@
     <?php
 
     require "shows.php";                    // nodig om object te maken
-    $showId = $_POST["showIdVak"];
+    $showId = $_POST["showId"];
     $showId1 = new shows();                // object aanmaken
     $showId1->searchshows($showId);
     // properties in variabelen zetten
@@ -29,7 +29,7 @@
 
     <form action="showsUpdate3.php" method="post">
         <!-- $inkordid mag niet meer gewijzigd worden -->
-        <input type="hidden" name="showIdVak" value="<?php echo $showId; ?> "><br/>
+        <input type="hidden" name="showId" value="<?php echo $showId; ?> "><br/>
         <input type="text" name="showName" value="<?php echo $showName; ?> "><br/>
         <input type="text" name="showType" value="<?php echo $showType; ?> "><br/>
         <input type="text" name="showGenre" value="<?php echo $showGenre; ?> "><br/><br/>

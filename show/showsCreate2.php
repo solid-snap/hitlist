@@ -6,7 +6,6 @@
 </head>
     <body>
     <h1>shows Create 2</h1>
-
         <?php
         require "shows.php";
         // uitlezen vakjes van KlantenCreate1 -----

@@ -15,14 +15,14 @@
     require "shows.php";
 
     // gegevens uit de array in variabelen stoppen
-    $showId = $_POST["showIdVak"];
-    $showName = $_POST["showNameVak"];
-    $showType = $_POST["showTypeVak"];
-    $showGenre = $_POST["showGenreVak"];
-    $showSeasons = $_POST["showSeasonsVak"];
-    $showEplength = $_POST["showEpLengthVak"];
-    $showReview = $_POST["showReviewVak"];
-    $showSummary = $_POST["showSummaryVak"];
+    $showId = $_POST["showId"];
+    $showName = $_POST["showName"];
+    $showType = $_POST["showType"];
+    $showGenre = $_POST["showGenre"];
+    $showSeasons = $_POST["showSeasons"];
+    $showEplength = $_POST["showEpLength"];
+    $showReview = $_POST["showReview"];
+    $showSummary = $_POST["showSummary"];
     // maken object ---------------------------------------------------
     $showId1 = new shows($showId, $showName, $showType, $showGenre, $showSeasons, $showEplength, $showReview, $showSummary); // maakt object
     $showId1->updateshows($showId);                   // vervangt de tabelgegevens voor objectgegevens
