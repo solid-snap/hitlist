@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
-<!--  -->
     <head>
-        <title>shows Create 2</title>
     </head>
     <body>
-        <h1>shows Create 2</h1>
-
+    <?php
+    include "hitlistCss.php"
+    ?>
+    <div class="pageInfo">
         <?php
         require "shows.php";
         // uitlezen vakjes van KlantenCreate1 -----
@@ -25,5 +25,7 @@
 
         $show1->afdrukken(); //hallo
         ?>
+        <h2><a href="showIndex.php">go back to shows</a></h2>
+    </div>
     </body>
 </html>

@@ -1,11 +1,8 @@
 <!doctype html>
 <html>
-<!-- Anjo Eijeriks -->
     <head>
-        <title>Update Movies Formulier 3</title>
     </head>
     <body>
-    <h1>Update Movies Formulier 3</h1>
 
         <?php
         require "Movies.php";
@@ -26,6 +23,7 @@
         $mov1->afdrukken();	                       // drukt object af
 
         ?>
+    <h2><a href="movieIndex.php">go back to movies</a></h2>
     </body>
 </html>
 

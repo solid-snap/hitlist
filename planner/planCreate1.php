@@ -1,12 +1,9 @@
 <!doctype html>
 <html>
 <head>
-    <title>InkoopOrders Create 1</title>
 </head>
 <body>
-
-<div id="centercontent">
-    <h1>InkoopOrders Create 1 </h1>
+<h1>Make a Plan</h1>
     <form action="planCreate2.php" method="post">
         <label for "movIdVak">movId: </label>
         <input type="text" name="movIdVak"></input>
@@ -27,6 +24,6 @@
         <input type="text" name="planDateVak"></input>
         <input type="submit">
     </form>
-</div>
+    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 </body>
 </html>

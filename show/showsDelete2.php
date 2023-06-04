@@ -2,11 +2,12 @@
 <html>
 <!--  -->
 <head>
-    <title>shows Delete 2</title>
 </head>
 <body>
-<h1>delete shows formulier 2 </h1>
-
+<?php
+include "hitlistCss.php"
+?>
+<div class="pageInfo">
 <?php
 require "shows.php";
 
@@ -21,11 +22,12 @@ $show1->searchshows($showId);
     <!-- 2x verwijderBox om nee of ja door te kunnen geven -->
     <input type="hidden" name="verwijderBox" value="nee">
     <input type="checkbox" name="verwijderBox" value="ja">
-    <label for="verwijderBox"> Verwijder deze student.</label><br/><br/>
+    <label for="verwijderBox"> Remove the show.</label><br/><br/>
     <input type="submit"><br/><br/>
 </form>
 
-<a href="schoolmenu.php"> terug naar het menu.</a>
+<h2><a href="showIndex.php">go back to shows</a></h2>
+</div>
 </body>
 </html>
 

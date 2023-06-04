@@ -1,10 +1,6 @@
 <!doctype html>
 <html>
 <body>
-<div id="centercontent">
-    <h1>update student formulier 3</h1>
-
-
     <?php
     require "planner.php";
     // gegevens uit de array in variabelen stoppen
@@ -19,12 +15,12 @@
     // maken object ---------------------------------------------------
     $planner1 = new planner($movId, $showId, $planName, $movieName, $showName,$planDate); // maakt object
     $planner1->updatePlan($planId);                   // vervangt de tabelgegevens voor objectgegevens
-    echo "Dit zijn de gewijzigde gegevens: <br/>";
+    echo "this is the updated information: <br/>";
     echo $planId . "<br/>";
     $planner1->afdrukken();                           // drukt object af
 
     ?>
-</div>
+    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 
 </body>
 

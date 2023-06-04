@@ -34,5 +34,6 @@
             <input type="text"   name="movSummaryVak" value="<?php echo $movSummary;  ?> "><br><br>
             <input type="submit"><br><br>
         </form>
+    <h2><a href="movieIndex.php">go back to movies</a></h2>
     </body>
 </html>

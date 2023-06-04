@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-<!-- Victoria Hoogeveen -->
 
     <body>
         <?php
@@ -19,5 +18,7 @@
             <label for="verwijderBox">Delete this movie.</label><br/><br/>
             <input type="submit"><br/><br/>
         </form>
+        <h2><a href="movieIndex.php">go back to movies</a></h2>
+    </body>
 </html>
 

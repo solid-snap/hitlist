@@ -1,11 +1,8 @@
 <!doctype html>
-<html>
-<!-- Victoria Hoogeveen -->
+
 <head>
-    <title>Movie Create 2</title>
 </head>
     <body>
-        <h1>Movie Create 2</h1>
         <?php
         require "Movies.php";
 
@@ -25,6 +22,7 @@
 
         $mov1->afdrukken();
         ?>
+        <h2><a href="movieIndex.php">go back to movies</a></h2>
     </body>
 </html>
 

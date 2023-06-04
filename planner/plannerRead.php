@@ -3,14 +3,13 @@
 <html lang="en">
 <body>
 
-<div id="centercontent">
-<p>Alle gegevens van de inkooporders:</p>
+<h1>All the Plans</h1>
 <?php
 require "planner.php";
 $planner1 = new planner();
 $planner1->readPlan();
 
 ?>
-</div>
+<h2><a href="plannerIndex.php">go back to planner</a></h2>
 </body>
 </html>

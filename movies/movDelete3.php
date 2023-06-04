@@ -15,5 +15,6 @@
                 echo "This movie hasn't been deleted. <br/>";
             }
             ?>
+            <h2><a href="movieIndex.php">go back to movies</a></h2>
     </body>
 </html>

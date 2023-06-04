@@ -1,10 +1,6 @@
 <!doctype html>
 <html>
 <body>
-
-<div id="centercontent">
-    <h1>InkoopOrders Create 2</h1>
-
     <?php
     require "planner.php";
 
@@ -24,6 +20,6 @@
 
     $planner1->afdrukken();
     ?>
-</div>
+    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 </body>
 </html>
