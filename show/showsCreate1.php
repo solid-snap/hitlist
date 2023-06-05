@@ -3,9 +3,7 @@
 <head>
 </head>
     <body>
-    <?php
-    include "hitlistCss.php"
-    ?>
+    <link rel="stylesheet" href="../hitlist.css">
     <div class="pageInfo">
     <h1>Add a show</h1>
         <form action="showsCreate2.php" method="post">

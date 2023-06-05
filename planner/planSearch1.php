@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <body>
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
 <h1>Look up a Plan</h1>
 
     <form action="planSearch2.php" method="post">
@@ -10,5 +12,6 @@
         <br>
     </form>
     <h2><a href="plannerIndex.php">go back to planner</a></h2>
+</div>
 </body>
 </html>

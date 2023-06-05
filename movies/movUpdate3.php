@@ -3,7 +3,8 @@
     <head>
     </head>
     <body>
-
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
         <?php
         require "Movies.php";
         // gegevens uit de array in variabelen stoppen
@@ -24,6 +25,7 @@
 
         ?>
     <h2><a href="movieIndex.php">go back to movies</a></h2>
+    </div>
     </body>
 </html>
 

@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <body>
-
-
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
     <?php
 
     require "planner.php";                    // nodig om object te maken
@@ -31,5 +31,6 @@
         <input type="submit"><br><br>
     </form>
     <h2><a href="plannerIndex.php">go back to planner</a></h2>
+</div>
 </body>
 </html>

@@ -1,8 +1,6 @@
 <html>
 <body>
-<?php
-include "hitlistCss.php"
-?>
+<link rel="stylesheet" href="../hitlist.css">
 <div class="pageInfo">
     <h1>Add Plans</h1>
     <a href="planCreate1.php">Add a plan</a>

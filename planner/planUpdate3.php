@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <body>
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
     <?php
     require "planner.php";
     // gegevens uit de array in variabelen stoppen
@@ -21,7 +23,7 @@
 
     ?>
     <h2><a href="plannerIndex.php">go back to planner</a></h2>
-
+</div>
 </body>
 
 </html>

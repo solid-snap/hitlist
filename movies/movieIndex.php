@@ -1,8 +1,6 @@
 <html>
 <body>
-<?php
-include "hitlistCss.php"
-?>
+<link rel="stylesheet" href="../hitlist.css">
 <div class="pageInfo">
     <h1>Add Movies</h1>
     <a href="movCreate1.php">Add a movie</a>

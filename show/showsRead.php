@@ -1,11 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <body>
-<?php
-include "hitlistCss.php"
-?>
+<link rel="stylesheet" href="../hitlist.css">
 <div class="pageInfo">
 <h1>All the shows</h1>
 <?php

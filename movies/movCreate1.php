@@ -3,6 +3,8 @@
 <head>
 </head>
     <body>
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
         <h1>Add a movie</h1>
         <form action="movCreate2.php" method="post">
             <label for "movNameVak">Movie Name: </label>
@@ -25,5 +27,6 @@
             <input type="submit">
         </form>
         <h2><a href="movieIndex.php">go back to movies</a></h2>
+    </div>
     </body>
 </html>

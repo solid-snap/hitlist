@@ -3,9 +3,7 @@
 <head>
 </head>
 <body>
-<?php
-include "hitlistCss.php"
-?>
+<link rel="stylesheet" href="../hitlist.css">
 <div class="pageInfo">
 <h1>Remove a show</h1>
 <form action="showsDelete2.php" method="post">

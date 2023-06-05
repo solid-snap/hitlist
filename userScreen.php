@@ -6,7 +6,7 @@ include "hitlistCss.php"
 <div class="pageInfo">
     <nav>
         <ul>
-            <li><a href="index.php"></a>home</li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="movies/movieIndex.php">movies</a></li>
             <li><a href="show/showIndex.php">shows</a></li>
             <li><a href="planner/plannerIndex.php"></a>planner</li>
