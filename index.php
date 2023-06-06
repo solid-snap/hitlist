@@ -1,8 +1,6 @@
 <html>
 <body>
-<?php
-include "hitlistCss.php"
-?>
+<link rel="stylesheet" href="hitlist.css">
 <div class="pageInfo">
     <nav>
         <ul>
