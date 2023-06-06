@@ -15,5 +15,6 @@ include "hitlistCss.php"
         </nav>
     </div>
 </div>
+        <footer> Contact Information : HitList@Gmail.com </footer>
 </body>
 </html>
