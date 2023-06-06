@@ -4,14 +4,16 @@
 include "hitlistCss.php"
 ?>
 <div class="pageInfo">
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="topnav" id="myTopNav">
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#movies">Movies-Shows</a></li>
+                <li><a href="#planner">Planner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
 </body>
 </html>
