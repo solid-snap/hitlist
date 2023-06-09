@@ -1,12 +1,10 @@
 <!doctype html>
 <html>
-<!-- Anjo Eijeriks -->
     <head>
-        <title>Update Movies Formulier 3</title>
     </head>
     <body>
-    <h1>Update Movies Formulier 3</h1>
-
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
         <?php
         require "Movies.php";
         // gegevens uit de array in variabelen stoppen
@@ -26,6 +24,8 @@
         $mov1->afdrukken();	                       // drukt object af
 
         ?>
+    <h2><a href="movieIndex.php">go back to movies</a></h2>
+    </div>
     </body>
 </html>
 

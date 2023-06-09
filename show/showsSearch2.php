@@ -1,12 +1,10 @@
-
 <!doctype html>
 <html>
-<!--  -->
 <head>
-    <title>SearchStudentFormulier2</title>
 </head>
 <body>
-<h1>search student formulier 2 </h1>
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
 <?php
 require "shows.php";
 
@@ -15,6 +13,7 @@ $show1 = new shows();
 $show1->searchshows($showId);
 ?>
 
-<a href="schoolmenu.php"> terug naar het menu.</a>
+<<h2><a href="showIndex.php">go back to shows</a></h2>
+</div>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <body>
-<div id="centercontent">
-    <a href="Inkoopordersindex.php">Terug naar het hoofdmenu</a>
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
     <?php
     require "planner.php";
 
@@ -10,14 +10,15 @@
     $verwijderen = $_POST["verwijderBox"];
 
     if ($verwijderen == "ja") {
-        echo "De student is inkooporder <br/>";
+        echo "the plan is removed <br/>";
         $planner1 = new planner();
         $planner1->deletePlan($planId);
     } else {
-        echo "De inkooporder is niet verwijderd <br/>";
+        echo "the plan isn't removed <br/>";
     }
     ?>
-</div>
 
+    <h2><a href="plannerIndex.php">go back to planner</a></h2>
+</div>
 </body>
 </html>

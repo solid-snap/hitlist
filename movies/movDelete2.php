@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
-<!-- Victoria Hoogeveen -->
-
     <body>
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
         <?php
         require "Movies.php";
         $movId = $_POST["movIdVak"];
@@ -19,5 +19,8 @@
             <label for="verwijderBox">Delete this movie.</label><br/><br/>
             <input type="submit"><br/><br/>
         </form>
+        <h2><a href="movieIndex.php">go back to movies</a></h2>
+    </div>
+    </body>
 </html>
 

@@ -1,10 +1,8 @@
 <!doctype html>
 <html>
-<!-- Victoria Hoogeveen -->
 <body>
-
-<div id="centercontent">
-
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
     <?php
 
     require "planner.php";                    // nodig om object te maken
@@ -32,6 +30,7 @@
         <input type="text" name="planDateVak" value="<?php echo $planDate; ?> "><br><br>
         <input type="submit"><br><br>
     </form>
+    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 </div>
 </body>
 </html>

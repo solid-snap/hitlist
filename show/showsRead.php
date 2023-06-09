@@ -1,18 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <body>
-
-<div id="centercontent">
-<p>Alle gegevens van de Leveranciers:</p>
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
+<h1>All the shows</h1>
 <?php
 require "shows.php";
 $shows1 = new shows();
 $shows1->readshows();
 
 ?>
-    <a href="Leveranciersindex.html">terug naar het menu.</a>
+<h2><a href="showIndex.php">go back to shows</a></h2>
 </div>
 </body>
 </html>

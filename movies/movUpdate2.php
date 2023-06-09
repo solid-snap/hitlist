@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-<!-- Victoria Hoogeveen -->
+
 <head>
-    <title>Update Movies Formulier 2</title>
 </head>
     <body>
-    <h1>Update Movies Formulier 2</h1>
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
 
         <?php
 
@@ -34,5 +34,7 @@
             <input type="text"   name="movSummaryVak" value="<?php echo $movSummary;  ?> "><br><br>
             <input type="submit"><br><br>
         </form>
+    <h2><a href="movieIndex.php">go back to movies</a></h2>
+    </div>
     </body>
 </html>

@@ -1,16 +1,10 @@
 <!doctype html>
 <html>
-<!--  -->
 <head>
-    <title>update shows formulier 2</title>
 </head>
 <body>
-<?php
-
-?>
-
-    <h1>update shows formulier 2</h1>
-
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
     <?php
 
     require "shows.php";                    // nodig om object te maken
@@ -39,5 +33,7 @@
         <input type="text" name="showSummary" value="<?php echo $showSummary; ?> "><br/><br/>
         <input type="submit"><br/><br/>
     </form>
+    <h2><a href="showIndex.php">go back to shows</a></h2>
+</div>
 </body>
 </html>

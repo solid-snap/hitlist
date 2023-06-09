@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-<!-- Victoria Hoogeveen -->
 <head>
-    <title>Movie Create 1</title>
 </head>
     <body>
-        <h1>Movie Create 1 </h1>
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
+        <h1>Add a movie</h1>
         <form action="movCreate2.php" method="post">
             <label for "movNameVak">Movie Name: </label>
             <input type = "text" name = "movNameVak"></input>
@@ -26,5 +26,7 @@
             <input type = "text" name = "movSummaryVak"></input>
             <input type="submit">
         </form>
+        <h2><a href="movieIndex.php">go back to movies</a></h2>
+    </div>
     </body>
 </html>

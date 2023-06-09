@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <body>
-<div id="centercontent">
-
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
     <?php
     require "planner.php";
     $planId = $_POST["planIdVak"];
@@ -16,11 +16,10 @@
         <!-- 2x verwijderBox om nee of ja door te kunnen geven -->
         <input type="hidden" name="verwijderBox" value="nee">
         <input type="checkbox" name="verwijderBox" value="ja">
-        <label for="verwijderBox"> Verwijder deze inkooporder.</label><br/><br/>
+        <label for="verwijderBox"> Remove this plan.</label><br/><br/>
         <input type="submit"><br/><br/>
     </form>
-
-    <a href="Inkoopordersindex.php"> terug naar het menu.</a>
+    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 </div>
 </body>
 </html>

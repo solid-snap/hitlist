@@ -1,12 +1,10 @@
-
 <!doctype html>
 <html>
 <head>
-    <title>delete show formulier 3</title>
 </head>
 <body>
-<h1>delete show formulier 3</h1>
-<a href="schoolmenu.php">Terug naar het hoofdmenu</a>
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
 <?php
 require "shows.php";
 
@@ -14,13 +12,14 @@ $showId = $_POST["showIdVak"];
 $verwijderen = $_POST["verwijderBox"];
 
 if ($verwijderen == "ja") {
-    echo "De show is verwijderd <br/>";
+    echo "The show is removed <br/>";
     $show1 = new shows();
     $show1->deleteshows($showId);
 } else {
-    echo "De show is niet verwijderd <br/>";
+    echo "the show isn't removed <br/>";
 }
 ?>
-
+<h2><a href="showIndex.php">go back to shows</a></h2>
+</div>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-<!--  -->
 <head>
-    <title>shows Create 1</title>
 </head>
     <body>
-    <h1>shows Create 1 </h1>
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
+    <h1>Add a show</h1>
         <form action="showsCreate2.php" method="post">
             <label for "showNameVak">showName: </label>
             <input type="text" name="showNameVak"></input>
@@ -30,5 +30,7 @@
             <br/>
             <input type="submit">
         </form>
+    <h2><a href="showIndex.php">go back to shows</a></h2>
+    </div>
     </body>
 </html>

@@ -1,15 +1,15 @@
 <!doctype html>
 <html>
 <body>
-<div id="centercontent">
+<link rel="stylesheet" href="../hitlist.css">
+<div class="pageInfo">
     <?php
     require "planner.php";
     $planId = $_POST["planIdVak"];
     $planner1 = new planner();
     $planner1->searchplan($planId);
     ?>
-
-    <a href="Artikelenindex.php"> terug naar het menu.</a>
+    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 </div>
 </body>
 </html>
