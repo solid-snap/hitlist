@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
-<!-- Victoria Hoogeveen -->
     <body>
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
     <?php
     require "User.php";
     $userId = $_POST["userIdVak"];
@@ -18,5 +19,7 @@
         <label for="verwijderBox">Delete this user.</label><br/><br/>
         <input type="submit"><br/><br/>
     </form>
+        <h2><a href="../login.php">go back to login</a></h2>
+    </div>
 </html>
 

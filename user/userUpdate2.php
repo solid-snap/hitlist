@@ -5,6 +5,8 @@
     <title>Update Movies Formulier 2</title>
 </head>
     <body>
+    <link rel="stylesheet" href="../hitlist.css">
+    <div class="pageInfo">
     <h1>Update Movies Formulier 2</h1>
         <?php
 
@@ -25,6 +27,8 @@
             <input type="text"   name="userPasswordVak"  value="<?php echo $userPassword;  ?> "><br>
             <input type="submit"><br><br>
         </form>
+        <h2><a href="../login.php">go back to login</a></h2>
+    </div>
     </body>
 </html>
 
