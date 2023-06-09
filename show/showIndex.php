@@ -16,7 +16,7 @@
     <br>
     <h1>Remove Shows</h1>
     <a href="showsDelete1.php">remove a show</a>
-    <h2><a href="../userScreen.php">go back to manage</a></h2>
+    <h2><a href="../userMenus/userScreen.php">go back to manage</a></h2>
 </div>
 </body>
 </html>

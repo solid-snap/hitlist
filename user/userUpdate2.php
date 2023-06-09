@@ -27,7 +27,7 @@
             <input type="text"   name="userPasswordVak"  value="<?php echo $userPassword;  ?> "><br>
             <input type="submit"><br><br>
         </form>
-        <h2><a href="../login.php">go back to login</a></h2>
+        <h2><a href="../login/login.php">go back to login</a></h2>
     </div>
     </body>
 </html>

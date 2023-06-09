@@ -19,7 +19,7 @@
 
         $user1->afdrukken();
         ?>
-        <h2><a href="../login.php">go back to shows</a></h2>
+        <h2><a href="../login/login.php">go back to shows</a></h2>
     </div>
     </body>
 </html>

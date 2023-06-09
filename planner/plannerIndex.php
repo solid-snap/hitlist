@@ -16,7 +16,7 @@
     <br>
     <h1>Remove Plans</h1>
     <a href="planDelete1.php">remove a Plan</a>
-    <h2><a href="../userScreen.php">go back to manage</a></h2>
+    <h2><a href="../userMenus/userScreen.php">go back to manage</a></h2>
 </div>
 </body>
 </html>

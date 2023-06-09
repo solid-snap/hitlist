@@ -12,6 +12,6 @@
         <input type="text" id = "userId" name="userIdVak">
         <input type="submit">
     </form>
-        <h2><a href="../login.php">go back to login</a></h2>
+        <h2><a href="../login/login.php">go back to login</a></h2>
     </div>
 </body>

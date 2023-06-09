@@ -14,7 +14,7 @@
         <input type = "text" name = "userPasswordVak"></input>
         <input type="submit">
     </form>
-        <h2><a href="../login.php">go back to login</a></h2>
+        <h2><a href="../login/login.php">go back to login</a></h2>
     </div>
     </body>
 
