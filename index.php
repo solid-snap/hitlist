@@ -1,16 +1,15 @@
+<link rel="stylesheet" href="hitlist.css">
 <html>
 <body>
-<?php
-include "hitlistCss.php"
-?>
+
 <div class="pageInfo">
     <div class="topnav" id="myTopNav">
         <nav>
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#movies">Movies-Shows</a></li>
-                <li><a href="#planner">Planner</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="showMoviePreview.php">Movies-Shows</a></li>
+                <li><a href="videoSearch.php">trailer</a></li>
+                <li><a href="login.php">login</a></li>
             </ul>
         </nav>
     </div>

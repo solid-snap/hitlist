@@ -1,8 +1,5 @@
 <html>
 <body>
-<?php
-include "api.php";
-?>
 <link rel="stylesheet" href="hitlist.css">
 <div class="pageInfo">
 <nav>
