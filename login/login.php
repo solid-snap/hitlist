@@ -68,16 +68,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<link rel="stylesheet" href="../hitlist.css">
+<link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo"><!-- HTML-formulier voor inloggen -->
+    <div class="topnav" id="myTopNav">
     <nav>
         <ul>
             <li><a href="../index.php">Home</a></li>
             <li><a href="../userMenus/showMoviePreview.php">shows&movies</a></li>
             <li><a href="../userMenus/videoSearch.php">trailer</a></li>
-            <li><a href="login.php">login</a></li>
+            <li><a href="login.php" class="active">login</a></li>
         </ul>
     </nav>
+    </div>
 <form method="POST" action="../userMenus/userScreen.php">
     <input type="text" name="gebruikersnaam" placeholder="Gebruikersnaam" required><br>
     <input type="password" name="wachtwoord" placeholder="Wachtwoord" required><br>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <body>
-    <link rel="stylesheet" href="../hitlist.css">
+    <link rel="stylesheet" href="../HitList2.css">
     <div class="pageInfo">
     <h1>Look up a movie</h1>
         <form action="movSearch2.php" method="post">
