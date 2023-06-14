@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <body>
-<link rel="stylesheet" href="../hitlist.css">
+<link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo">
 <h1>Look up a Plan</h1>
 

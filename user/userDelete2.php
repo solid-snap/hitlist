@@ -9,7 +9,7 @@
     $user1 = new User();
     $user1->searchUser($userId);
     ?>
-
+        <div class="topnav" id="myTopNav">
     <form action="userDelete3.php" method="post">
         <!-- $movid mag niet meer gewijzigd worden -->
         <input type="hidden" name="userIdVak" value=" <?php echo $userId ?> ">
@@ -19,6 +19,7 @@
         <label for="verwijderBox">Delete this user.</label><br/><br/>
         <input type="submit"><br/><br/>
     </form>
+        </div>
         <h2><a href="../login/login.php">go back to login</a></h2>
     </div>
 </html>

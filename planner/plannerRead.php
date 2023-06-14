@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<link rel="stylesheet" href="../hitlist.css">
+<link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo">
 <h1>All the Plans</h1>
 <?php
