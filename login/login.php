@@ -8,80 +8,84 @@
             <li><a href="login.php">login</a></li>
         </ul>
     </nav>
-<?php
-// Configuratiegegevens voor de database
-$dbhost = "localhost";
-$dbname = "hitlist";
-$dbuser = "root";
-$dbpass = "root";
+    <?php
+    // Configuratiegegevens voor de database
+    $dbhost = "localhost";
+    $dbname = "hitlist";
+    $dbuser = "root";
+    $dbpass = "root";
 
-// Klasse voor gebruikersbeheer
-class User
-
-{
-    private $dbconn;
-
-    public function __construct($dbhost, $dbname, $dbuser, $dbpass)
+    // Klasse voor gebruikersbeheer
+    class User
     {
-        // Verbinding maken met de database via PDO
-        $dsn = "mysql:host=$dbhost;dbname=$dbname;charset=utf8mb4";
+        private $dbconn;
 
-        try {
-            $this->dbconn = new PDO($dsn, $dbuser, $dbpass);
-            $this->dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            die("Kan geen verbinding maken met de database: " . $e->getMessage());
-        }
-    }
+        public function __construct($dbhost, $dbname, $dbuser, $dbpass)
+        {
+            // Verbinding maken met de database via PDO
+            $dsn = "mysql:host=$dbhost;dbname=$dbname;charset=utf8mb4";
 
-    public function login($username, $password)
-    {
-        try {
-            // Query voorbereiden
-            $query = "SELECT * FROM users WHERE userName = :username AND userPassword = :password";
-            $stmt = $this->dbconn->prepare($query);
-
-            // Parameters binden
-            $stmt->bindParam(':username', $username);
-            $stmt->bindParam(':password', $password);
-
-            // Query uitvoeren
-            $stmt->execute();
-
-            // Controleren op overeenkomende gebruikers
-            if ($stmt->rowCount() > 0) {
-                // Inloggen gelukt
-                return true;
-            } else {
-                // inloggen mislukt
-                return false;
+            try {
+                $this->dbconn = new PDO($dsn, $dbuser, $dbpass);
+                $this->dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (PDOException $e) {
+                die("Kan geen verbinding maken met de database: " . $e->getMessage());
             }
-        } catch (PDOException $e) {
-            die("Fout bij het uitvoeren van de query: " . $e->getMessage());
+        }
+
+        public function login($username, $password)
+        {
+            try {
+                // Query voorbereiden
+                $query = "SELECT * FROM users WHERE userName = :username";
+                $stmt = $this->dbconn->prepare($query);
+
+                // Parameters binden
+                $stmt->bindParam(':username', $username);
+
+                // Query uitvoeren
+                $stmt->execute();
+
+                // Controleren op overeenkomende gebruikers
+                if ($stmt->rowCount() > 0) {
+                    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+                    $storedPassword = $user['userPassword'];
+
+                    // Wachtwoord verifieren
+                    if (password_verify($password, $storedPassword)) {
+                        // Inloggen gelukt
+                        return true;
+                    }
+                }
+
+                // Inloggen mislukt
+                return false;
+            } catch (PDOException $e) {
+                die("Fout bij het uitvoeren van de query: " . $e->getMessage());
+            }
         }
     }
-}
 
-// Gebruik van het inlogsysteem
-$user = new User($dbhost, $dbname, $dbuser, $dbpass);
+    // Gebruik van het inlogsysteem
+    $user = new User($dbhost, $dbname, $dbuser, $dbpass);
 
-// Inlogpoging controleren
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    // Inlogpoging controleren
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $username = $_POST["username"];
+        $password = $_POST["password"];
 
-    if ($user->login($username, $password)) {
-        header("location: ../userMenus/userScreen.php");
-    } else {
-        echo "failed to login!";
+        if ($user->login($username, $password)) {
+            header("location: ../userMenus/userScreen.php");
+        } else {
+            echo "Failed to login!";
+        }
     }
-}
-?>
+    ?>
 
-<form method="POST" action="#">
-    <input type="text" name="username" placeholder="username" required><br>
-    <input type="password" name="password" placeholder="password" required><br>
-    <input type="submit" value="login">
-</form>
+    <form method="POST" action="#">
+        <input type="text" name="username" placeholder="username" required><br>
+        <input type="password" name="password" placeholder="password" required><br>
+        <input type="submit" value="login">
+    </form>
     <H2><a href="../user/userCreate1.php">Make an account</a></H2>
 </div>
