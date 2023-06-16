@@ -6,7 +6,6 @@
 <nav>
     <ul>
         <li><a href="../index.php">Home</a></li>
-        <li><a href="showMoviePreview.php">shows&movies</a></li>
         <li><a href="videoSearch.php" class="active">trailer</a></li>
         <li><a href="../login/login.php">login</a></li>
     </ul>

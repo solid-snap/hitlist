@@ -20,7 +20,6 @@
         <h1>Remove Shows</h1>
         <a href="showsDelete1.php">remove a show</a>
 </div>
-
 <footer> Contact Information : Hittlistt@Gmail.com </footer>
 </body>
 </html>
