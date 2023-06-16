@@ -21,13 +21,8 @@
     $showReview = $_POST["showReview"];
     $showSummary = $_POST["showSummary"];
     // maken object ---------------------------------------------------
-<<<<<<< Updated upstream
-    $showId1 = new shows($showId, $showName, $showType, $showGenre, $showSeasons, $showEplength, $showReview, $showSummary); // maakt object
-    $showId1->updateshows($showId);                   // changes the tableinfo to object info
-=======
     $showId1 = new shows( $showName, $showType, $showGenre, $showSeasons, $showEplength, $showReview, $showSummary); // maakt object
     $showId1->updateshows($showId);                   // vervangt de tabelgegevens voor objectgegevens
->>>>>>> Stashed changes
     echo "this is the updated information: <br/>";
     echo $showId . "<br/>";
     $showId1->afdrukken();                           // prints

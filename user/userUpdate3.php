@@ -5,7 +5,7 @@
     <title>Update User Formulier 3</title>
 </head>
     <body>
-    <link rel="stylesheet" href="../hitlist.css">
+    <link rel="stylesheet" href="../HitList2.css">
     <div class="pageInfo">
     <h1>Update User Formulier 3</h1>
         <?php

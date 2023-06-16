@@ -4,7 +4,7 @@
     <title>Update User Formulier 1</title>
 </head>
     <body>
-    <link rel="stylesheet" href="../hitlist.css">
+    <link rel="stylesheet" href="../HitList2.css"
     <div class="pageInfo">
     <h1>Update User formulier 1</h1>
     <form action="userUpdate2.php" method="post">
