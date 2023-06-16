@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../HitList2.css">
     <div class="pageInfo">
         <div class="topnav" id="myTopNav">
-    <h1>Make a Account</h1>
+    <h1>Make an Account</h1>
         </div>
     <form action="userCreate2.php" method="post">
         <label for "userNameVak">User Name: </label>
