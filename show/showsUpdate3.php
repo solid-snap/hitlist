@@ -3,8 +3,11 @@
 <head>
 </head>
 <body>
-<link rel="stylesheet" href="../hitlist.css">
+<link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo">
+    <div class="topnav" id="myTopNav">
+        <h2><a href="showIndex.php" class="active">go back to show</a></h2>
+    </div>
     <?php
     require "shows.php";
 
@@ -25,7 +28,7 @@
     $showId1->afdrukken();                           // drukt object af
 
     ?>
-    <h2><a href="showIndex.php">go back to shows</a></h2>
 </div>
 </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>

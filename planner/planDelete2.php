@@ -3,6 +3,9 @@
 <body>
 <link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo">
+    <div class="topnav" id="myTopNav">
+        <h2><a href="plannerIndex.php" class="active">go back to planner</a></h2>
+    </div>
     <?php
     require "planner.php";
     $planId = $_POST["planIdVak"];
@@ -19,7 +22,6 @@
         <label for="verwijderBox"> Remove this plan.</label><br/><br/>
         <input type="submit"><br/><br/>
     </form>
-    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 </div>
 </body>
 </html>
