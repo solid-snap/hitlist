@@ -24,4 +24,5 @@ if ($delete == "ja") {
 ?>
 </div>
 </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>
