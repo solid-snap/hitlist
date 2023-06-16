@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo"><!-- HTML-form for login -->
+
         <div class="topnav" id="myTopNav">
+
     <nav>
         <ul>
             <li><a href="../index.php">Home</a></li>
@@ -8,7 +10,9 @@
             <li><a href="login.php">login</a></li>
         </ul>
     </nav>
-        </div>
+    </div>
+
+
     <?php
     // database configuration
     $dbhost = "localhost";

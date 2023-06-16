@@ -22,6 +22,7 @@
     $showSummary = $_POST["showSummary"];
     // maken object ---------------------------------------------------
 
+
     $showId1 = new shows( $showName, $showType, $showGenre, $showSeasons, $showEplength, $showReview, $showSummary); // maakt object
     $showId1->updateshows($showId);                   // vervangt de tabelgegevens voor objectgegevens
     echo "this is the updated information: <br/>";
