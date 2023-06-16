@@ -3,8 +3,11 @@
 <head>
 </head>
     <body>
-    <link rel="stylesheet" href="../hitlist.css">
+    <link rel="stylesheet" href="../HitList2.css">
     <div class="pageInfo">
+        <div class="topnav" id="myTopNav">
+            <h2><a href="showIndex.php" class="active">go back to show</a></h2>
+        </div>
     <h1>Add a show</h1>
         <form action="showsCreate2.php" method="post">
             <label for "showNameField">showName: </label>

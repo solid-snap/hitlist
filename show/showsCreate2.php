@@ -5,6 +5,11 @@
         <title>shows Create 2</title>
     </head>
     <body>
+    <link rel="stylesheet" href="../HitList2.css">
+    <div class="pageInfo">
+        <div class="topnav" id="myTopNav">
+            <h2><a href="showIndex.php" class="active">go back to show</a></h2>
+        </div>
     <h1>shows Create 2</h1>
         <?php
         require "shows.php";

@@ -20,5 +20,7 @@
         <h1>Remove Movies</h1>
         <a href="movDelete1.php">remove a movie</a>
 </div>
+
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </body>
 </html>

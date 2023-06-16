@@ -3,6 +3,9 @@
 <body>
 <link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo">
+    <div class="topnav" id="myTopNav">
+        <h2><a href="plannerIndex.php" class="active">go back to planner</a></h2>
+    </div>
     <?php
 
     require "planner.php";                    // needed to make object
@@ -30,7 +33,6 @@
         <input type="text" name="planDateField" value="<?php echo $planDate; ?> "><br><br>
         <input type="submit"><br><br>
     </form>
-    <h2><a href="plannerIndex.php">go back to planner</a></h2>
 </div>
 </body>
 </html>

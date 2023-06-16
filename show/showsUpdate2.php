@@ -3,8 +3,11 @@
 <head>
 </head>
 <body>
-<link rel="stylesheet" href="../hitlist.css">
+<link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo">
+    <div class="topnav" id="myTopNav">
+        <h2><a href="showIndex.php" class="active">go back to show</a></h2>
+    </div>
     <?php
 
     require "shows.php";                    // needed to make an object
@@ -33,7 +36,7 @@
         <input type="text" name="showSummary" value="<?php echo $showSummary; ?> "><br/><br/>
         <input type="submit"><br/><br/>
     </form>
-    <h2><a href="showIndex.php">go back to shows</a></h2>
 </div>
 </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>

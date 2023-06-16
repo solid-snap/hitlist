@@ -3,8 +3,11 @@
 <head>
 </head>
 <body>
-<link rel="stylesheet" href="../hitlist.css">
+<link rel="stylesheet" href="../HitList2.css">
 <div class="pageInfo">
+    <div class="topnav" id="myTopNav">
+        <h2><a href="showIndex.php" class="active">go back to show</a></h2>
+    </div>
 <?php
 require "shows.php";
 
@@ -22,8 +25,6 @@ $show1->searchshows($showId);
     <label for="deleteBox"> Remove the show.</label><br/><br/>
     <input type="submit"><br/><br/>
 </form>
-
-<h2><a href="showIndex.php">go back to shows</a></h2>
 </div>
 </body>
 </html>
