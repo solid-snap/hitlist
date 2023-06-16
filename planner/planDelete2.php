@@ -15,7 +15,7 @@
 
     <form action="planDelete3.php" method="post">
         <!-- $id cant be changed anymore -->
-        <input type="hidden" name="planIdVak" value=" <?php echo $planId ?> ">
+        <input type="hidden" name="planIdField" value=" <?php echo $planId ?> ">
         <!-- 2x deleteBox for yes or no to continue -->
         <input type="hidden" name="deleteBox" value="nee">
         <input type="checkbox" name="deleteBox" value="ja">

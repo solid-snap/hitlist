@@ -24,13 +24,13 @@
 
     <form action="planUpdate3.php" method="post">
         <!-- id cant be canged -->
-        <input type="hidden" name="planIdVak" value="<?php echo $planId; ?>"><br>
-        <input type="text" name="movIdVak" value="<?php echo $movId; ?>"><br>
-        <input type="text" name="showIdVak" value="<?php echo $showId; ?> "><br>
-        <input type="text" name="planNameVak" value="<?php echo $planName; ?> "><br>
-        <input type="text" name="movieNameVak" value="<?php echo $movieName; ?> "><br>
-        <input type="text" name="showNameVak" value="<?php echo $showName; ?> "><br>
-        <input type="text" name="planDateVak" value="<?php echo $planDate; ?> "><br>
+        <input type="hidden" name="planIdField" value="<?php echo $planId; ?>"><br>
+        <input type="text" name="movIdField" value="<?php echo $movId; ?>"><br>
+        <input type="text" name="showIdField" value="<?php echo $showId; ?> "><br>
+        <input type="text" name="planNameField" value="<?php echo $planName; ?> "><br>
+        <input type="text" name="movieNameField" value="<?php echo $movieName; ?> "><br>
+        <input type="text" name="showNameField" value="<?php echo $showName; ?> "><br>
+        <input type="text" name="planDateField" value="<?php echo $planDate; ?> "><br>
         <input type="submit"><br><br>
     </form>
 </div>

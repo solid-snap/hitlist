@@ -12,7 +12,7 @@
 require "shows.php";
 
 $showId = $_POST["showIdField"];
-$delete = $_POST["verwijderBox"];
+$delete = $_POST["deleteBox"];
 
 if ($delete == "ja") {
     echo "The show is removed <br/>";

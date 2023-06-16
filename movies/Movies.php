@@ -167,13 +167,18 @@ values (:movId,:movName, :movType, :movGenre, :movLength, :movReview, :movSummar
         $sql->execute();
         // info from the array in object and print
         foreach ($sql as $mov) {
-             $mov["movId"] . "<br>";
-             $this->movName = $mov["movName"] . "";
-             $this->movType = $mov["movType"] . "";
-             $this->movGenre = $mov["movGenre"] . "";
-             $this->movLength = $mov["movLength"] . "";
-             $this->movReview = $mov["movReview"] . "";
-             $this->movSummary = $mov["movSummary"] . "";
+            echo $mov["movId"] . "<br>";
+            echo $this->movName = $mov["movName"] . "";
+            echo "<br>";
+            echo $this->movType = $mov["movType"] . "";
+            echo "<br>";
+            echo $this->movGenre = $mov["movGenre"] . "";
+            echo "<br>";
+            echo $this->movLength = $mov["movLength"] . "";
+            echo "<br>";
+            echo $this->movReview = $mov["movReview"] . "";
+            echo "<br>";
+            echo $this->movSummary = $mov["movSummary"] . "";
         }
     }
 
