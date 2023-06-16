@@ -14,7 +14,12 @@
     $showId = $_POST["showId"];
     $showId1 = new shows();                // makes the object
     $showId1->searchshows($showId);
+<<<<<<< Updated upstream
     // properties into the variables
+=======
+
+    // properties in variabelen zetten
+>>>>>>> Stashed changes
     $showName = $showId1->get_showName();
     $showType = $showId1->get_showType();
     $showGenre = $showId1->get_showGenre();
@@ -29,11 +34,11 @@
         <input type="hidden" name="showId" value="<?php echo $showId; ?> "><br/>
         <input type="text" name="showName" value="<?php echo $showName; ?> "><br/>
         <input type="text" name="showType" value="<?php echo $showType; ?> "><br/>
-        <input type="text" name="showGenre" value="<?php echo $showGenre; ?> "><br/><br/>
+        <input type="text" name="showGenre" value="<?php echo $showGenre; ?> "><br/>
         <input type="text" name="showSeasons" value="<?php echo $showSeasons; ?> "><br/>
-        <input type="text" name="showEpLength" value="<?php echo $showEpLength; ?> "><br/><br/>
-        <input type="text" name="showReview" value="<?php echo $showReview; ?> "><br/><br/>
-        <input type="text" name="showSummary" value="<?php echo $showSummary; ?> "><br/><br/>
+        <input type="text" name="showEpLength" value="<?php echo $showEpLength; ?> "><br/>
+        <input type="text" name="showReview" value="<?php echo $showReview; ?> "><br/>
+        <input type="text" name="showSummary" value="<?php echo $showSummary; ?> "><br/>
         <input type="submit"><br/><br/>
     </form>
 </div>

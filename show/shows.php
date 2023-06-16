@@ -164,7 +164,7 @@ values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, 
         // statement
         $sql = $conn->prepare("
 									update shows
-									set showId=:showId, showName=:showName, showType=:showType, 
+									set  showName=:showName, showType=:showType, 
 									    showGenre=:showGenre, showSeasons=:showSeasons, showEpLength=:showEpLength, showReview=:showReview, showSummary=:showSummary    
 									where showId=:showId
 								 ");
@@ -217,14 +217,14 @@ values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, 
         $sql->execute();
         // puts info from the array in the object and print
         foreach ($sql as $shows) {
-            echo $shows["showId"] . "<br>";
-            echo $this->showName = $shows["showName"] . "<br>";
-            echo $this->showType = $shows["showType"] . "<br>";
-            echo $this->showGenre = $shows["showGenre"] . "<br>";
-            echo $this->showSeasons = $shows["showSeasons"] . "<br>";
-            echo $this->showEpLength = $shows["showEpLength"] . "<br>";
-            echo $this->showReview = $shows["showReview"] . "<br>";
-            echo $this->showSummary = $shows["showSummary"] . "<br>";
+             $shows["showId"] . "";
+             $this->showName = $shows["showName"] . "";
+             $this->showType = $shows["showType"] . "";
+             $this->showGenre = $shows["showGenre"] . "";
+             $this->showSeasons = $shows["showSeasons"] . "";
+             $this->showEpLength = $shows["showEpLength"] . "";
+             $this->showReview = $shows["showReview"] . "";
+             $this->showSummary = $shows["showSummary"] . "";
 
 
         }

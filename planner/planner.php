@@ -198,13 +198,13 @@ values (:planId, :movId, :showId, :planName,:movieName, :showName,:planDate)");
             $sql->execute([":planId" => $planId]);
             // putting info into the array and printing
             foreach ($sql as $planner) {
-                echo $planner["planId"] . "<br>";
-                echo $planner["movId"] . "<br>";
-                echo $planner["showId"] . "<br>";
-                echo $this->planName = $planner["planName"] . "<br>";
-                echo $this->movieName = $planner["movieName"] . "<br>";
-                echo $this->showName = $planner["showName"] . "<br>";
-                echo $this->planDate = $planner["planDate"] . "<br>";
+                 $planner["planId"] . "";
+                 $planner["movId"] . "";
+                 $planner["showId"] . "";
+                 $this->planName = $planner["planName"] . "";
+                 $this->movieName = $planner["movieName"] . "";
+                 $this->showName = $planner["showName"] . "";
+                 $this->planDate = $planner["planDate"] . "";
 
 
             }

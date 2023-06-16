@@ -27,6 +27,7 @@
         ?>
 
         <form action="movUpdate3.php" method="post">
+<<<<<<< Updated upstream
             <!-- $klantid cant be changed anymore -->
             <input type="hidden" name="movIdField" value="<?php echo $movId;?>"><br>
             <input type="text"   name="movNameField"      value="<?=$movName;?>"><br>
@@ -36,6 +37,17 @@
             <input type="text"   name="movReviewField" value="<?php echo $movReview;  ?> "><br><br>
             <input type="text"   name="movSummaryField" value="<?php echo $movSummary;  ?> "><br><br>
             <input type="submit"><br><br>
+=======
+            <!-- $klantid mag niet meer gewijzigd worden -->
+            <input type="hidden" name="movIdVak" value="<?php echo $movId;?>"><br>
+            <input type="text"   name="movNameVak"  value="<?php echo $movName;?>"><br>
+            <input type="text"   name="movTypeVak"  value="<?php echo $movType;  ?> "><br>
+            <input type="text"   name="movGenreVak" value="<?php echo $movGenre;  ?> "><br>
+            <input type="text"   name="movLengthVak"  value="<?php echo $movLength;  ?> "><br>
+            <input type="text"   name="movReviewVak" value="<?php echo $movReview;  ?> "><br>
+            <input type="text"   name="movSummaryVak" value="<?php echo $movSummary;  ?> "><br>
+            <input type="submit"><br>
+>>>>>>> Stashed changes
         </form>
     </div>
     </body>

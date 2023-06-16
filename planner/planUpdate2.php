@@ -23,6 +23,7 @@
     ?>
 
     <form action="planUpdate3.php" method="post">
+<<<<<<< Updated upstream
         <!-- id cant be canged -->
         <input type="hidden" name="planIdField" value="<?php echo $planId; ?>"><br>
         <input type="text" name="movIdField" value="<?= $movId; ?>"><br>
@@ -31,6 +32,16 @@
         <input type="text" name="movieNameField" value="<?php echo $movieName; ?> "><br>
         <input type="text" name="showNameField" value="<?php echo $showName; ?> "><br><br>
         <input type="text" name="planDateField" value="<?php echo $planDate; ?> "><br><br>
+=======
+        <!-- $klantid mag niet meer gewijzigd worden -->
+        <input type="hidden" name="planIdVak" value="<?php echo $planId; ?>"><br>
+        <input type="text" name="movIdVak" value="<?= $movId; ?>"><br>
+        <input type="text" name="showIdVak" value="<?php echo $showId; ?> "><br>
+        <input type="text" name="planNameVak" value="<?php echo $planName; ?> "><br>
+        <input type="text" name="movieNameVak" value="<?php echo $movieName; ?> "><br>
+        <input type="text" name="showNameVak" value="<?php echo $showName; ?> "><br>
+        <input type="text" name="planDateVak" value="<?php echo $planDate; ?> "><br>
+>>>>>>> Stashed changes
         <input type="submit"><br><br>
     </form>
 </div>
