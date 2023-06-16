@@ -1,10 +1,6 @@
+<link rel="stylesheet" href="../HitList2.css">
 <html>
 <body>
-<<<<<<< Updated upstream:videoSearch.php
-<link rel="stylesheet" href="../HitList2.css">
-
-<link rel="stylesheet" href="../HitList2.css">
->>>>>>> Stashed changes:userMenus/videoSearch.php
 <div class="pageInfo">
     <div class="topnav" id="myTopNav">
 <nav>
@@ -22,6 +18,6 @@
 <a href="../index.php">go to home screen</a>
 </div>
 </body>
-<footer> Contact Information : HitList@Gmail.com </footer>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>
 

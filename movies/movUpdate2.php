@@ -6,6 +6,9 @@
     <body>
     <link rel="stylesheet" href="../HitList2.css">
     <div class="pageInfo">
+        <div class="topnav" id="myTopNav">
+            <h2><a href="movieIndex.php" class="active">go back to movies</a></h2>
+        </div>
 
         <?php
 
@@ -34,7 +37,6 @@
             <input type="text"   name="movSummaryVak" value="<?php echo $movSummary;  ?> "><br><br>
             <input type="submit"><br><br>
         </form>
-    <h2><a href="movieIndex.php">go back to movies</a></h2>
     </div>
     </body>
 </html>

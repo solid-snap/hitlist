@@ -5,12 +5,14 @@
     <body>
     <link rel="stylesheet" href="../HitList2.css">
     <div class="pageInfo">
+        <div class="topnav" id="myTopNav">
+            <h2><a href="movieIndex.php" class="active">go back to movies</a></h2>
+        </div>
     <h1>Update a movie</h1>
         <form action="movUpdate2.php" method="post">
             <label for="movId">MovId:</label>
             <input type="text" id = "movId" name="movIdVak">
             <input type="submit">
         </form>
-        <h2><a href="movieIndex.php">go back to movies</a></h2>
     </div>
 </body>

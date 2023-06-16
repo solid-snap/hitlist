@@ -3,14 +3,14 @@
     <body>
     <div class="pageInfo">
         <div class="topnav" id="myTopNav">
-        <nav>
-            <ul>
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="showMoviePreview.php" class="active">shows&movies</a></li>
-                <li><a href="videoSearch.php">trailer</a></li>
-                <li><a href="../login/login.php">login</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="showMoviePreview.php" class="active">shows&movies</a></li>
+                    <li><a href="videoSearch.php">trailer</a></li>
+                    <li><a href="../login/login.php">login</a></li>
+                </ul>
+            </nav>
         </div>
                 <?php
                 require_once "show/shows.php";
@@ -26,6 +26,6 @@
                 ?>
         <a href="../index.php">go to home screen</a>
         </div>
-        <footer> Contact Information : HitList@Gmail.com </footer>
+         <footer> Contact Information : Hittlistt@Gmail.com </footer>
     </body>
 </html>
