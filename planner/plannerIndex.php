@@ -21,4 +21,5 @@
         <a href="planDelete1.php">remove a Plan</a>
 </div>
 </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>

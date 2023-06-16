@@ -5,8 +5,11 @@
     <title>Update User Formulier 3</title>
 </head>
     <body>
-    <link rel="stylesheet" href="../hitlist.css">
+    <link rel="stylesheet" href="../HitList2.css">
     <div class="pageInfo">
+        <div class="topnav" id="myTopNav">
+            <h2><a href="../login/login.php" class="active">go back to login</a></h2>
+        </div>
     <h1>Update User Formulier 3</h1>
         <?php
         require "User.php";
@@ -23,8 +26,8 @@
         $user1->afdrukken();	                       // prints objects
 
         ?>
-        <h2><a href="../login/login.php">go back to login</a></h2>
     </div>
     </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>
 

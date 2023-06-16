@@ -36,4 +36,5 @@
     <h2><a href="showIndex.php">go back to shows</a></h2>
     </div>
     </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>

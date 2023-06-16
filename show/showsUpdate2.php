@@ -14,12 +14,7 @@
     $showId = $_POST["showId"];
     $showId1 = new shows();                // makes the object
     $showId1->searchshows($showId);
-<<<<<<< Updated upstream
-    // properties into the variables
-=======
 
-    // properties in variabelen zetten
->>>>>>> Stashed changes
     $showName = $showId1->get_showName();
     $showType = $showId1->get_showType();
     $showGenre = $showId1->get_showGenre();

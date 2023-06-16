@@ -15,4 +15,5 @@
         <h1>Remove a movie</h1>
         </div>
     </body>
+    <footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>

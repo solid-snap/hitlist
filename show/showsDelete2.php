@@ -27,5 +27,6 @@ $show1->searchshows($showId);
 </form>
 </div>
 </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>
 

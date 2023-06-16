@@ -30,4 +30,5 @@
         $show1->afdrukken(); //hallo
         ?>
     </body>
+<footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>

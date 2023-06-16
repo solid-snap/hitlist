@@ -14,5 +14,6 @@
         <h2><a href="../login/login.php" class="active">go back to login</a></h2>
     </div>
     </body>
+    <footer> Contact Information : Hittlistt@Gmail.com </footer>
 </html>
 
