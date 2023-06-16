@@ -4,12 +4,12 @@ require_once "../DBHitlist.php";
 class User
 {
 
-    // properties -- eigenschappen ----
+    // properties ------
     public $userName;
     public $userPassword;
 
 
-    //methode -- functies
+    //method -- functions
     // constructor
     function __construct($userName = NULL, $userPassword = NULL)
     {
@@ -50,15 +50,15 @@ class User
     public function createUser()
     {
         global $conn;
-        // gegevens uit object in variabelen zetten
+        // info from the objects into the statements
         $userId = NULL;
         $userName = $this->get_userName();
         $userPassword = $this->get_userPassword();
 
-        // statement maken voor tabel
+        // prepares statement from the table
         $sql = $conn->Prepare("insert into users
 values (:userId,:userName, :userPassword)");
-// variabelen in de statement zetten
+// variables into the statement
         $sql->bindParam(":userId", $userId);
         $sql->bindParam(":userName", $userName);
         $sql->bindParam(":userPassword", $userPassword);
@@ -71,11 +71,11 @@ values (:userId,:userName, :userPassword)");
     public function readUser()
     {
         global $conn;
-        // statement maken
+        // makes statement
         $sql = $conn->prepare(" SELECT * FROM users");
         $sql->execute();
         foreach ($sql as $user) {
-            echo $user["userId"] . " - ";                         // geen eigenscap van object student
+            echo $user["userId"] . " - ";                         //
             $this->set_userName($user["userName"]);
             echo $user["userName"] . " - ";
             $this->set_userPassword($user["userPassword"]);
@@ -89,10 +89,10 @@ values (:userId,:userName, :userPassword)");
         // sql statement
         $sql = $conn->prepare("select * from users
                                where userId = :userId");
-        // variabele in de statement zetten
+        // variables into the statement
         $sql->bindParam(":userId", $userId);
         $sql->execute();
-        // gegevens uit de array in object stoppen en afdrukken
+        // info from the array in object and prints it
         foreach ($sql as $user) {
             echo $user["userId"] . "<br>";
             echo $this->userName = $user["userName"] . "<br>";
@@ -103,10 +103,10 @@ values (:userId,:userName, :userPassword)");
     public function deleteUser($userId)
     {
         global $conn;
-        //statements maken
+        //statements
         $sql = $conn->prepare(" DELETE FROM users
         where userId = :userId");
-        // variable in de statement zetten
+        // puts variables into the statement
         $sql->bindParam(":userId", $userId);
         $sql->execute();
     }
@@ -114,18 +114,18 @@ values (:userId,:userName, :userPassword)");
     public function updateUser($userId)
     {
         global $conn;
-        // gegevens uit het object in variabelen zetten
+        // puts info from the variables into the statement
         $userId;
         $userName = $this->get_userName();
         $userPassword = $this->get_userPassword();
 
-        // statement maken
+        // statement
         $sql = $conn->prepare("
 									update users
 									set userName=:userName, userPassword=:userPassword  
 									where userId=:userId
 								 ");
-        // variabelen in de statement zetten
+        // variables into the statements
 
         $sql->bindParam(":userId", $userId);
         $sql->bindParam(":userName", $userName);

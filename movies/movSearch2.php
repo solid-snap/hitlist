@@ -5,7 +5,7 @@
     <div class="pageInfo">
             <?php
             require "Movies.php";
-            $movId = $_POST["movIdVak"];
+            $movId = $_POST["movIdField"];
             $mov1 = new Movies();
             $mov1->searchMov($movId);
             ?>

@@ -6,7 +6,7 @@ require_once "../DBHitlist.php";
 class
 shows
 {
-    // properties -- eigenschappen ----
+    // properties --  ----
 
     public $showName;
     public $showType;
@@ -16,7 +16,7 @@ shows
     public $showReview;
     public $showSummary;
 
-    //methode -- functies
+    //method -- functions
     // constructor
     function __construct($showName = NULL, $showType = NULL, $showGenre = NULL, $showSeasons = NULL, $showEpLength = NULL, $showReview = NULL, $showSummary = NULL )
     {
@@ -117,11 +117,11 @@ shows
         echo "<br/>";
     }
 
-    // crud methoden
+    // crud method
     public function createshows()
     {
         global $conn;
-        // gegevens uit object in variabelen zetten
+        // info from the objects into the variables
         $showId = NULL;
         $showName = $this->get_showName();
         $showType = $this->get_showType();
@@ -132,10 +132,10 @@ shows
         $showSummary = $this->get_showSummary();
 
 
-        // statement maken voor tabel
+        // prepare statement for the table
         $sql = $conn->Prepare("insert into shows
 values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, :showReview, :showSummary) ");
-// variabelen in de statement zetten
+// puts variables into the statement
         $sql->bindParam(":showId", $showId);
         $sql->bindParam(":showName", $showName);
         $sql->bindParam(":showType", $showType);
@@ -145,14 +145,14 @@ values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, 
         $sql->bindParam(":showReview", $showReview);
         $sql->bindParam(":showSummary", $showSummary);
         $sql->execute();
-        //melding
-        echo "De student is toegevoegd: </br>";
+        //notification
+        echo "the show has been added: </br>";
     }
     public
     function updateshows($showId)
     {
         global $conn;
-        // gegevens uit het object in variabelen zetten
+        // info from the objects into the statement
         $showId;
         $showName = $this->get_showName();
         $showType = $this->get_showType();
@@ -161,14 +161,14 @@ values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, 
         $showEpLength = $this->get_showEpLength();
         $showReview = $this->get_showReview();
         $showSummary = $this->get_showSummary();
-        // statement maken
+        // statement
         $sql = $conn->prepare("
 									update shows
 									set showId=:showId, showName=:showName, showType=:showType, 
 									    showGenre=:showGenre, showSeasons=:showSeasons, showEpLength=:showEpLength, showReview=:showReview, showSummary=:showSummary    
 									where showId=:showId
 								 ");
-        // variabelen in de statement zetten
+        // put variables into statement
 
         $sql->bindParam(":showId", $showId);
         $sql->bindParam(":showName", $showName);
@@ -183,11 +183,11 @@ values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, 
     public function readshows ()
     {
         global $conn;
-        // statement maken
+        // statement
         $sql = $conn->prepare(" SELECT * FROM shows");
         $sql->execute();
         foreach ($sql as $shows) {
-            echo $shows["showId"] . " - ";                         // geen eigenscap van object student
+            echo $shows["showId"] . " - ";                         //
             $this->set_showName($shows["showName"]);
             echo $shows["showName"] . " - ";
             $this->set_showType($shows["showType"]);
@@ -212,10 +212,10 @@ values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, 
         // sql statement
         $sql = $conn->prepare("select * from shows
                                where showId = :showId");
-        // variabele in de statement zetten
+        // variabeles into the statement
         $sql->bindParam(":showId", $showId);
         $sql->execute();
-        // gegevens uit de array in object stoppen en afdrukken
+        // puts info from the array in the object and print
         foreach ($sql as $shows) {
             echo $shows["showId"] . "<br>";
             echo $this->showName = $shows["showName"] . "<br>";
@@ -233,10 +233,10 @@ values (:showId, :showName, :showType, :showGenre, :showSeasons, :showEpLength, 
     public function deleteshows($showId)
     {
         global $conn;
-        //statements maken
+        //statements
         $sql = $conn->prepare(" DELETE FROM shows
         where showId = :showId");
-        // variable in de statement zetten
+        // variables into the statement
         $sql->bindParam(":showId", $showId);
         $sql->execute();
     }

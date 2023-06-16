@@ -10,21 +10,21 @@
     <h1>Update Movies Formulier 2</h1>
         <?php
 
-        require "User.php";					// nodig om object te maken
-        $userId = $_POST["userIdVak"];
-        $user1 = new User();				// object aanmaken
+        require "User.php";					// needed to make an object
+        $userId = $_POST["userIdField"];
+        $user1 = new User();				// makes object
         $user1->searchUser($userId);
 
-        // properties in variabelen zetten
+        // properties in variables
         $userName = $user1->get_userName();
         $userPassword = $user1->get_userPassword();
         ?>
 
         <form action="userUpdate3.php" method="post">
-            <!-- $userid mag niet meer gewijzigd worden -->
-            <input type="hidden" name="userIdVak" value="<?php echo $userId;?>"><br>
-            <input type="text"   name="userNameVak"      value="<?=$userName;?>"><br>
-            <input type="text"   name="userPasswordVak"  value="<?php echo $userPassword;  ?> "><br>
+            <!-- $id cant be changed -->
+            <input type="hidden" name="userIdField" value="<?php echo $userId;?>"><br>
+            <input type="text"   name="userNameField"      value="<?=$userName;?>"><br>
+            <input type="text"   name="userPasswordField"  value="<?php echo $userPassword;  ?> "><br>
             <input type="submit"><br><br>
         </form>
         <h2><a href="../login/login.php">go back to login</a></h2>

@@ -16,6 +16,6 @@ try {
 
    // echo "Connectie gelukt! </br>";
 } catch (PDOException $e) {
-    echo "Connectie mislukt:" . $e->getMessage();
+    echo "Connection failed:" . $e->getMessage();
 }
 

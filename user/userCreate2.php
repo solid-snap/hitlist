@@ -11,8 +11,8 @@
     </div>
         <?php
         require "User.php";
-        $userName=$_POST["userNameVak"];
-        $password=$_POST["userPasswordVak"];
+        $userName=$_POST["userNameField"];
+        $password=$_POST["userPasswordField"];
 
         $gehashed = password_hash($password, null);
         $userPassword =$gehashed;

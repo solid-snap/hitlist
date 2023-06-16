@@ -7,7 +7,7 @@
 
     <form action="planSearch2.php" method="post">
         <label for="planId">planId:</label>
-        <input type="text" id="planId" name="planIdVak">
+        <input type="text" id="planId" name="planIdField">
         <input type="submit">
         <br>
     </form>

@@ -5,18 +5,18 @@
 <div class="pageInfo">
     <?php
     require "planner.php";
-    $planId = $_POST["planIdVak"];
+    $planId = $_POST["planIdField"];
     $planner1 = new planner();
     $planner1->searchplan($planId);
     ?>
 
     <form action="planDelete3.php" method="post">
-        <!-- $studentid mag niet meer gewijzigd worden -->
+        <!-- $id cant be changed anymore -->
         <input type="hidden" name="planIdVak" value=" <?php echo $planId ?> ">
-        <!-- 2x verwijderBox om nee of ja door te kunnen geven -->
-        <input type="hidden" name="verwijderBox" value="nee">
-        <input type="checkbox" name="verwijderBox" value="ja">
-        <label for="verwijderBox"> Remove this plan.</label><br/><br/>
+        <!-- 2x deleteBox for yes or no to continue -->
+        <input type="hidden" name="deleteBox" value="nee">
+        <input type="checkbox" name="deleteBox" value="ja">
+        <label for="deleteBox"> Remove this plan.</label><br/><br/>
         <input type="submit"><br/><br/>
     </form>
     <h2><a href="plannerIndex.php">go back to planner</a></h2>

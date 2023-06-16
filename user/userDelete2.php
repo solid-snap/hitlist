@@ -5,18 +5,18 @@
     <div class="pageInfo">
     <?php
     require "User.php";
-    $userId = $_POST["userIdVak"];
+    $userId = $_POST["userIdField"];
     $user1 = new User();
     $user1->searchUser($userId);
     ?>
         <div class="topnav" id="myTopNav">
     <form action="userDelete3.php" method="post">
-        <!-- $movid mag niet meer gewijzigd worden -->
-        <input type="hidden" name="userIdVak" value=" <?php echo $userId ?> ">
-        <!-- 2x verwijderBox om nee of ja door te kunnen geven -->
-        <input type="hidden" name="verwijderBox" value="nee">
-        <input type="checkbox" name="verwijderBox" value="ja">
-        <label for="verwijderBox">Delete this user.</label><br/><br/>
+        <!-- $id cant be changed -->
+        <input type="hidden" name="userIdField" value=" <?php echo $userId ?> ">
+        <!-- 2x deleteBox  -->
+        <input type="hidden" name="deleteBox" value="nee">
+        <input type="checkbox" name="deleteBox" value="ja">
+        <label for="deleteBox">Delete this user.</label><br/><br/>
         <input type="submit"><br/><br/>
     </form>
         </div>

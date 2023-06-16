@@ -5,7 +5,7 @@
     <div class="pageInfo">
         <?php
         require "User.php";
-        $userId = $_POST["userIdVak"];
+        $userId = $_POST["userIdField"];
         $user1 = new User();
         $user1->searchUser($userId);
         ?>

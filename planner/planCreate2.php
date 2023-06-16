@@ -6,19 +6,19 @@
     <?php
     require "planner.php";
 
-    // uitlezen vakjes van InkOrdCreate1 -----
-    $movId = $_POST["movIdVak"];
-    $showId = $_POST["showIdVak"];
-    $planName = $_POST["planNameVak"];
-    $movieName = $_POST["movieNameVak"];
-    $showName = $_POST["showNameVak"];
-    $planDate = $_POST["planDateVak"];
+    // reading fields of planCreate -----
+    $movId = $_POST["movIdField"];
+    $showId = $_POST["showIdField"];
+    $planName = $_POST["planNameField"];
+    $movieName = $_POST["movieNameField"];
+    $showName = $_POST["showNameField"];
+    $planDate = $_POST["planDateField"];
 
-    // maken object -------------------------------
+    // makes object -------------------------------
     $planner1 = new planner($movId, $showId, $planName, $movieName, $showName, $planDate);
     $planner1->createPlan();
 
-    // afdrukken object ---------------------------
+    // print object ---------------------------
 
     $planner1->afdrukken();
     ?>

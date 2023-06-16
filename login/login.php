@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../hitlist.css">
-<div class="pageInfo"><!-- HTML-formulier voor inloggen -->
+<div class="pageInfo"><!-- HTML-form for login -->
     <nav>
         <ul>
             <li><a href="../index.php">Home</a></li>
@@ -9,20 +9,20 @@
         </ul>
     </nav>
     <?php
-    // Configuratiegegevens voor de database
+    // database configuration
     $dbhost = "localhost";
     $dbname = "hitlist";
     $dbuser = "root";
     $dbpass = "root";
 
-    // Klasse voor gebruikersbeheer
+    // class for the user
     class User
     {
         private $dbconn;
 
         public function __construct($dbhost, $dbname, $dbuser, $dbpass)
         {
-            // Verbinding maken met de database via PDO
+            // making a connection with the database
             $dsn = "mysql:host=$dbhost;dbname=$dbname;charset=utf8mb4";
 
             try {
@@ -36,29 +36,29 @@
         public function login($username, $password)
         {
             try {
-                // Query voorbereiden
+                // preparing the quary
                 $query = "SELECT * FROM users WHERE userName = :username";
                 $stmt = $this->dbconn->prepare($query);
 
-                // Parameters binden
+                // Parameters bind
                 $stmt->bindParam(':username', $username);
 
-                // Query uitvoeren
+                // Query execute
                 $stmt->execute();
 
-                // Controleren op overeenkomende gebruikers
+                // verify users
                 if ($stmt->rowCount() > 0) {
                     $user = $stmt->fetch(PDO::FETCH_ASSOC);
                     $storedPassword = $user['userPassword'];
 
-                    // Wachtwoord verifieren
+                    // password verify
                     if (password_verify($password, $storedPassword)) {
-                        // Inloggen gelukt
+                        // login successful
                         return true;
                     }
                 }
 
-                // Inloggen mislukt
+                // login failed
                 return false;
             } catch (PDOException $e) {
                 die("Fout bij het uitvoeren van de query: " . $e->getMessage());
@@ -66,10 +66,10 @@
         }
     }
 
-    // Gebruik van het inlogsysteem
+    // login system
     $user = new User($dbhost, $dbname, $dbuser, $dbpass);
 
-    // Inlogpoging controleren
+    // login attempt verify
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $_POST["username"];
         $password = $_POST["password"];

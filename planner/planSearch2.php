@@ -5,7 +5,7 @@
 <div class="pageInfo">
     <?php
     require "planner.php";
-    $planId = $_POST["planIdVak"];
+    $planId = $_POST["planIdField"];
     $planner1 = new planner();
     $planner1->searchplan($planId);
     ?>

@@ -5,12 +5,12 @@
 <div class="pageInfo">
     <?php
 
-    require "planner.php";                    // nodig om object te maken
-    $planId = $_POST["planIdVak"];
-    $planner1 = new planner();                // object aanmaken
+    require "planner.php";                    // needed to make object
+    $planId = $_POST["planIdField"];
+    $planner1 = new planner();                // making object
     $planner1->searchplan($planId);
 
-    // properties in variabelen zetten
+    // putting the properties in the variables
     $movId = $planner1->get_movId();
     $showId = $planner1->get_showId();
     $planName = $planner1->get_planName();
@@ -20,14 +20,14 @@
     ?>
 
     <form action="planUpdate3.php" method="post">
-        <!-- $klantid mag niet meer gewijzigd worden -->
-        <input type="hidden" name="planIdVak" value="<?php echo $planId; ?>"><br>
-        <input type="text" name="movIdVak" value="<?= $movId; ?>"><br>
-        <input type="text" name="showIdVak" value="<?php echo $showId; ?> "><br>
-        <input type="text" name="planNameVak" value="<?php echo $planName; ?> "><br><br>
-        <input type="text" name="movieNameVak" value="<?php echo $movieName; ?> "><br>
-        <input type="text" name="showNameVak" value="<?php echo $showName; ?> "><br><br>
-        <input type="text" name="planDateVak" value="<?php echo $planDate; ?> "><br><br>
+        <!-- id cant be canged -->
+        <input type="hidden" name="planIdField" value="<?php echo $planId; ?>"><br>
+        <input type="text" name="movIdField" value="<?= $movId; ?>"><br>
+        <input type="text" name="showIdField" value="<?php echo $showId; ?> "><br>
+        <input type="text" name="planNameField" value="<?php echo $planName; ?> "><br><br>
+        <input type="text" name="movieNameField" value="<?php echo $movieName; ?> "><br>
+        <input type="text" name="showNameField" value="<?php echo $showName; ?> "><br><br>
+        <input type="text" name="planDateField" value="<?php echo $planDate; ?> "><br><br>
         <input type="submit"><br><br>
     </form>
     <h2><a href="plannerIndex.php">go back to planner</a></h2>

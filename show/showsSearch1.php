@@ -8,7 +8,7 @@
 <h1>Look a show up</h1>
 <form action="showsSearch2.php" method="post">
     <label for="showId">showId:</label>
-    <input type="text" id="showId" name="showIdVak">
+    <input type="text" id="showId" name="showIdField">
     <input type="submit">
     <br>
 </form>

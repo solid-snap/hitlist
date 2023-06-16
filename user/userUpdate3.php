@@ -11,16 +11,16 @@
         <?php
         require "User.php";
         // gegevens uit de array in variabelen stoppen
-        $userId = $_POST["userIdVak"];
-        $userName = $_POST["userNameVak"];
-        $userPassword = $_POST["userPasswordVak"];
+        $userId = $_POST["userIdField"];
+        $userName = $_POST["userNameField"];
+        $userPassword = $_POST["userPasswordField"];
 
-        // maken object ---------------------------------------------------
-        $user1 = new User($userName, $userPassword); // maakt object
-        $user1->updateUser($userId);		           // vervangt de tabelgegevens voor objectgegevens
+        //  object ---------------------------------------------------
+        $user1 = new User($userName, $userPassword); //  object
+        $user1->updateUser($userId);		           // changes the tableinfo and object info
         echo "This is the updated information: <br/>";
         echo $userId ."<br/>";
-        $user1->afdrukken();	                       // drukt object af
+        $user1->afdrukken();	                       // prints objects
 
         ?>
         <h2><a href="../login/login.php">go back to login</a></h2>

@@ -6,7 +6,7 @@
     <h1>Look up a movie</h1>
         <form action="movSearch2.php" method="post">
             <label for="movId">movId:</label>
-            <input type="text" id="movId" name="movIdVak">
+            <input type="text" id="movId" name="movIdField">
             <input type="submit">
             <br>
         </form>

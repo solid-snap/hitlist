@@ -7,26 +7,26 @@
     <div class="pageInfo">
     <h1>Add a show</h1>
         <form action="showsCreate2.php" method="post">
-            <label for "showNameVak">showName: </label>
-            <input type="text" name="showNameVak"></input>
+            <label for "showNameField">showName: </label>
+            <input type="text" name="showNameField"></input>
             <br/>
-            <label for "showTypeVak">showType: </label>
-            <input type="text" name="showTypeVak"></input>
+            <label for "showTypeField">showType: </label>
+            <input type="text" name="showTypeField"></input>
             <br/>
-            <label for "showGenreVak">showGenre: </label>
-            <input type="text" name="showGenreVak"></input>
+            <label for "showGenreField">showGenre: </label>
+            <input type="text" name="showGenreField"></input>
             <br/>
-            <label for "showSeasonsVak">showSeasons: </label>
-            <input type="text" name="showSeasonsVak"></input>
+            <label for "showSeasonsField">showSeasons: </label>
+            <input type="text" name="showSeasonsField"></input>
             <br/>
-            <label for "showEpsLengthVak">showEpLength: </label>
-            <input type="text" name="showEpLengthVak"></input>
+            <label for "showEpsLengthField">showEpLength: </label>
+            <input type="text" name="showEpLengthField"></input>
             <br/>
-            <label for "showReviewVak">showReview: </label>
-            <input type="text" name="showReviewVak"></input>
+            <label for "showReviewField">showReview: </label>
+            <input type="text" name="showReviewField"></input>
             <br/>
-            <label for "showSummaryVak">showSummary: </label>
-            <input type="text" name="showSummaryVak"></input>
+            <label for "showSummaryField">showSummary: </label>
+            <input type="text" name="showSummaryField"></input>
             <br/>
             <input type="submit">
         </form>

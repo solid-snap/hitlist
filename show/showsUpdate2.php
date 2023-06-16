@@ -7,11 +7,11 @@
 <div class="pageInfo">
     <?php
 
-    require "shows.php";                    // nodig om object te maken
+    require "shows.php";                    // needed to make an object
     $showId = $_POST["showId"];
-    $showId1 = new shows();                // object aanmaken
+    $showId1 = new shows();                // makes the object
     $showId1->searchshows($showId);
-    // properties in variabelen zetten
+    // properties into the variables
     $showName = $showId1->get_showName();
     $showType = $showId1->get_showType();
     $showGenre = $showId1->get_showGenre();
@@ -22,7 +22,7 @@
     ?>
 
     <form action="showsUpdate3.php" method="post">
-        <!-- $inkordid mag niet meer gewijzigd worden -->
+        <!-- $id cant be changed -->
         <input type="hidden" name="showId" value="<?php echo $showId; ?> "><br/>
         <input type="text" name="showName" value="<?php echo $showName; ?> "><br/>
         <input type="text" name="showType" value="<?php echo $showType; ?> "><br/>

@@ -6,10 +6,10 @@
     <?php
     require "planner.php";
 
-    $planId = $_POST["planIdVak"];
-    $verwijderen = $_POST["verwijderBox"];
+    $planId = $_POST["planIdField"];
+    $delete = $_POST["deleteBox"];
 
-    if ($verwijderen == "ja") {
+    if ($delete == "ja") {
         echo "the plan is removed <br/>";
         $planner1 = new planner();
         $planner1->deletePlan($planId);

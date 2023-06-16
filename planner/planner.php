@@ -2,7 +2,7 @@
 require_once "../DBHitlist.php";
 class planner
 {
-    // properties -- eigenschappen ----
+    // properties -- ----
     public $movId;
     public $showId;
     public $planName;
@@ -10,7 +10,7 @@ class planner
     public $showName;
     public $planDate;
 
-    //methode -- functies
+    //methode -- functions
     // constructor
     function __construct($movId = NULL, $showId = NULL, $planName = NULL,
                          $movieName = NULL, $showName = NULL, $planDate=null)
@@ -103,12 +103,12 @@ class planner
 
     }
 
-    // crud methoden
+    // crud method
     public
     function createPlan()
     {
         global $conn;
-        // gegevens uit object in variabelen zetten
+        // info from object in variable
         $planId = NULL;
         $movId = $this->get_movId();
         $showId = $this->get_showId();
@@ -117,10 +117,10 @@ class planner
         $showName = $this->get_showName();
         $planDate = $this->get_planDate();
 
-        // statement maken voor tabel
+        // prepare statement for table
         $sql = $conn->Prepare("insert into planner
 values (:planId, :movId, :showId, :planName,:movieName, :showName,:planDate)");
-// variabelen in de statement zetten
+// variable in a statement
         $sql->bindParam(":planId", $planId);
         $sql->bindParam(":movId", $movId);
         $sql->bindParam(":showId", $showId);
@@ -129,15 +129,15 @@ values (:planId, :movId, :showId, :planName,:movieName, :showName,:planDate)");
         $sql->bindParam(":showName", $showName);
         $sql->bindParam(":planDate", $planDate);
         $sql->execute();
-        //melding
-        echo "De klant is toegevoegd: </br>";
+        //notification
+        echo "The plan has been added: </br>";
     }
 
     public
     function updatePlan($planId)
     {
         global $conn;
-        // gegevens uit het object in variabelen zetten
+        // info from the object in variables
         $planId;
         $movId = $this->get_movId();
         $showId = $this->get_showId();
@@ -145,14 +145,14 @@ values (:planId, :movId, :showId, :planName,:movieName, :showName,:planDate)");
         $movieName = $this->get_movieName();
         $showName = $this->get_showName();
         $planDate = $this->get_planDate();
-        // statement maken
+        // statement
         $sql = $conn->prepare("
 									update planner
 									set movId=:movId, showId=:showId, planName=:planName, 
 									    movieName=:movieName, showName=:showName, planDate=:planDate
 									where planId=:planId
 								 ");
-        // variabelen in de statement zetten
+        // putting variables into the statements
 
         $sql->bindParam(":planId", $planId);
         $sql->bindParam(":movId", $movId);
@@ -168,13 +168,13 @@ values (:planId, :movId, :showId, :planName,:movieName, :showName,:planDate)");
         function readPlan()
         {
             global $conn;
-            // statement maken
+            // make statement
             $sql = $conn->prepare(" SELECT * FROM planner");
             $sql->execute();
             foreach ($sql as $planner) {
                 echo $planner["planId"] . " - ";
                 echo $planner["movId"] . " - ";
-                echo $planner["showId"] . " - ";// geen eigenscap van object student
+                echo $planner["showId"] . " - ";//
                 $this->set_planName($planner["planName"]);
                 echo $planner["planName"] . " - ";
                 $this->set_movieName($planner["movieName"]);
@@ -193,10 +193,10 @@ values (:planId, :movId, :showId, :planName,:movieName, :showName,:planDate)");
             // sql statement
             $sql = $conn->prepare("select * from planner
                                where planId = :planId");
-            // variabele in de statement zetten
-            //$sql->bindParam(":inkordid", $inkordid);
+            // putting variables into the statement
+
             $sql->execute([":planId" => $planId]);
-            // gegevens uit de array in object stoppen en afdrukken
+            // putting info into the array and printing
             foreach ($sql as $planner) {
                 echo $planner["planId"] . "<br>";
                 echo $planner["movId"] . "<br>";
@@ -214,10 +214,10 @@ values (:planId, :movId, :showId, :planName,:movieName, :showName,:planDate)");
         function deletePlan($planId)
         {
             global $conn;
-            //statements maken
+            //making the statement
             $sql = $conn->prepare(" DELETE FROM Planner
         where planId = :planId");
-            // variable in de statement zetten
+            // putting variables into the statement
             $sql->bindParam(":planId", $planId);
             $sql->execute();
         }

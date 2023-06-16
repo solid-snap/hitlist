@@ -9,12 +9,12 @@
         require "Movies.php";
 
         // uitlezen vakjes van KlantenCreate1 -----
-        $movName=$_POST["movNameVak"];
-        $movType=$_POST["movTypeVak"];
-        $movGenre=$_POST["movGenreVak"];
-        $movLength=$_POST["movLengthVak"];
-        $movReview=$_POST["movReviewVak"];
-        $movSummary=$_POST["movSummaryVak"];
+        $movName=$_POST["movNameField"];
+        $movType=$_POST["movTypeField"];
+        $movGenre=$_POST["movGenreField"];
+        $movLength=$_POST["movLengthField"];
+        $movReview=$_POST["movReviewField"];
+        $movSummary=$_POST["movSummaryField"];
 
         // maken object -------------------------------
         $mov1 = new Movies($movName, $movType, $movGenre, $movLength, $movReview, $movSummary);

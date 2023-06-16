@@ -8,23 +8,23 @@
     <div class="topnav" id="myTopNav">
 <h1>Make a Plan</h1>
     <form action="planCreate2.php" method="post">
-        <label for "movIdVak">movId: </label>
-        <input type="text" name="movIdVak"></input>
+        <label for "movIdField">movId: </label>
+        <input type="text" name="movIdField"></input>
         <br/>
-        <label for "showIdVak">showId: </label>
-        <input type="text" name="showIdVak"></input>
+        <label for "showId">showId: </label>
+        <input type="text" name="showIdField"></input>
         <br/>
-        <label for "planNameVak">planName: </label>
-        <input type="text" name="planNameVak"></input>
+        <label for "planNameField">planName: </label>
+        <input type="text" name="planNameField"></input>
         <br/>
-        <label for "movieNameVak">movieName: </label>
-        <input type="text" name="movieNameVak"></input>
+        <label for "movieNameField">movieName: </label>
+        <input type="text" name="movieNameField"></input>
         <br/>
         <label for "showNameVak">showName: </label>
-        <input type="text" name="showNameVak"></input>
+        <input type="text" name="showNameField"></input>
         <br/>
         <label for "planDateVak">planDate: </label>
-        <input type="text" name="planDateVak"></input>
+        <input type="text" name="planDateField"></input>
         <input type="submit">
     </form>
     </div>

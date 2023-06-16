@@ -7,18 +7,18 @@
     <div class="pageInfo">
         <?php
         require "Movies.php";
-        // gegevens uit de array in variabelen stoppen
-        $movId = $_POST["movIdVak"];
-        $movName = $_POST["movNameVak"];
-        $movType = $_POST["movTypeVak"];
-        $movGenre = $_POST["movGenreVak"];
-        $movLength = $_POST["movLengthVak"];
-        $movReview = $_POST["movReviewVak"];
-        $movSummary = $_POST["movSummaryVak"];
+        // info from the array into the variables
+        $movId = $_POST["movIdField"];
+        $movName = $_POST["movNameField"];
+        $movType = $_POST["movTypeField"];
+        $movGenre = $_POST["movGenreField"];
+        $movLength = $_POST["movLengthField"];
+        $movReview = $_POST["movReviewField"];
+        $movSummary = $_POST["movSummaryField"];
 
-        // maken object ---------------------------------------------------
-        $mov1 = new Movies($movName, $movType, $movGenre, $movLength, $movReview, $movSummary); // maakt object
-        $mov1->updateMov($movId);		           // vervangt de tabelgegevens voor objectgegevens
+        // making an object ---------------------------------------------------
+        $mov1 = new Movies($movName, $movType, $movGenre, $movLength, $movReview, $movSummary); // makes object
+        $mov1->updateMov($movId);		           // changes the tableinfo voor objectinfo
         echo "This is the updated information: <br/>";
         echo $movId ."<br/>";
         $mov1->afdrukken();	                       // drukt object af

@@ -5,21 +5,21 @@
 <div class="pageInfo">
     <?php
     require "planner.php";
-    // gegevens uit de array in variabelen stoppen
-    $planId = $_POST["planIdVak"];
-    $movId = $_POST["movIdVak"];
-    $showId = $_POST["showIdVak"];
-    $planName = $_POST["planNameVak"];
-    $movieName = $_POST["movieNameVak"];
-    $showName = $_POST["showNameVak"];
-    $planDate = $_POST["planDateVak"];
+    // putting the info from the array into the variable
+    $planId = $_POST["planIdField"];
+    $movId = $_POST["movIdField"];
+    $showId = $_POST["showIdField"];
+    $planName = $_POST["planNameField"];
+    $movieName = $_POST["movieNameField"];
+    $showName = $_POST["showNameField"];
+    $planDate = $_POST["planDateField"];
 
-    // maken object ---------------------------------------------------
-    $planner1 = new planner($movId, $showId, $planName, $movieName, $showName,$planDate); // maakt object
-    $planner1->updatePlan($planId);                   // vervangt de tabelgegevens voor objectgegevens
+    // object ---------------------------------------------------
+    $planner1 = new planner($movId, $showId, $planName, $movieName, $showName,$planDate); // makes object
+    $planner1->updatePlan($planId);                   // replaces de tableinfo fo objectinfo
     echo "this is the updated information: <br/>";
     echo $planId . "<br/>";
-    $planner1->afdrukken();                           // drukt object af
+    $planner1->afdrukken();                           // prints
 
     ?>
     <h2><a href="plannerIndex.php">go back to planner</a></h2>

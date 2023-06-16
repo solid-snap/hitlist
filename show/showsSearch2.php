@@ -8,7 +8,7 @@
 <?php
 require "shows.php";
 
-$showId = $_POST["showIdVak"];
+$showId = $_POST["showIdField"];
 $show1 = new shows();
 $show1->searchshows($showId);
 ?>

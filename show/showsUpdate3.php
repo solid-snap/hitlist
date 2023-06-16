@@ -8,7 +8,7 @@
     <?php
     require "shows.php";
 
-    // gegevens uit de array in variabelen stoppen
+    // info from the array into the variables
     $showId = $_POST["showId"];
     $showName = $_POST["showName"];
     $showType = $_POST["showType"];
@@ -19,10 +19,10 @@
     $showSummary = $_POST["showSummary"];
     // maken object ---------------------------------------------------
     $showId1 = new shows($showId, $showName, $showType, $showGenre, $showSeasons, $showEplength, $showReview, $showSummary); // maakt object
-    $showId1->updateshows($showId);                   // vervangt de tabelgegevens voor objectgegevens
+    $showId1->updateshows($showId);                   // changes the tableinfo to object info
     echo "this is the updated information: <br/>";
     echo $showId . "<br/>";
-    $showId1->afdrukken();                           // drukt object af
+    $showId1->afdrukken();                           // prints
 
     ?>
     <h2><a href="showIndex.php">go back to shows</a></h2>

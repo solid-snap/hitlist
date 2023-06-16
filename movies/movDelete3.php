@@ -6,10 +6,10 @@
             <?php
             require "Movies.php";
 
-            $movId = $_POST["movIdVak"];
-            $verwijderen = $_POST["verwijderBox"];
+            $movId = $_POST["movIdField"];
+            $delete = $_POST["deleteBox"];
 
-            if ($verwijderen == "ja") {
+            if ($delete == "ja") {
                 echo "This movie has been deleted <br/>";
                 $mov1 = new Movies();
                 $mov1->deleteMov($movId);

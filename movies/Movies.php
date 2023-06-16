@@ -107,7 +107,7 @@ class Movies
     public function createMov()
     {
         global $conn;
-        // gegevens uit object in variabelen zetten
+        // info from objects in variables
         $movId = NULL;
         $movName = $this->get_movName();
         $movType = $this->get_movType();
@@ -116,7 +116,7 @@ class Movies
         $movReview = $this->get_movReview();
         $movSummary = $this->get_movSummary();
 
-        // statement maken voor tabel
+        // statement for the table
         $sql = $conn->Prepare("INSERT into movies
 values (:movId,:movName, :movType, :movGenre, :movLength, :movReview, :movSummary)");
 // variabelen in de statement zetten
@@ -128,7 +128,7 @@ values (:movId,:movName, :movType, :movGenre, :movLength, :movReview, :movSummar
         $sql->bindParam(":movReview", $movReview);
         $sql->bindParam(":movSummary", $movSummary);
         $sql->execute();
-        //melding
+        //notification
         echo "The movie has been added: </br>";
 
     }
@@ -136,7 +136,7 @@ values (:movId,:movName, :movType, :movGenre, :movLength, :movReview, :movSummar
     public function readMov()
     {
         global $conn;
-        // statement maken
+        // statement
         $sql = $conn->prepare(" SELECT * FROM movies");
         $sql->execute();
         foreach ($sql as $mov) {
@@ -162,10 +162,10 @@ values (:movId,:movName, :movType, :movGenre, :movLength, :movReview, :movSummar
         // sql statement
         $sql = $conn->prepare("select * from movies
                                where movId = :movId");
-        // variabele in de statement zetten
+        // putting variables in statement
         $sql->bindParam(":movId", $movId);
         $sql->execute();
-        // gegevens uit de array in object stoppen en afdrukken
+        // info from the array in object and print
         foreach ($sql as $mov) {
             echo $mov["movId"] . "<br>";
             echo $this->movName = $mov["movName"] . "<br>";
@@ -180,10 +180,10 @@ values (:movId,:movName, :movType, :movGenre, :movLength, :movReview, :movSummar
     public function deleteMov($movId)
     {
         global $conn;
-        //statements maken
+        //statements
         $sql = $conn->prepare(" DELETE FROM movies
         where movId = :movId");
-        // variable in de statement zetten
+        // variables in a statement
         $sql->bindParam(":movId", $movId);
         $sql->execute();
     }

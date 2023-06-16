@@ -8,10 +8,10 @@
 <?php
 require "shows.php";
 
-$showId = $_POST["showIdVak"];
-$verwijderen = $_POST["verwijderBox"];
+$showId = $_POST["showIdField"];
+$delete = $_POST["verwijderBox"];
 
-if ($verwijderen == "ja") {
+if ($delete == "ja") {
     echo "The show is removed <br/>";
     $show1 = new shows();
     $show1->deleteshows($showId);
